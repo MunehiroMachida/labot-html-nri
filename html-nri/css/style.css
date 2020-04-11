@@ -16,3 +16,53 @@ body,p,ol,ul,li,a,h1,h2,h3,small{
     padding: 0;
 }
 /* ===== ここまでリセットCSS ===== */
+
+/* ヘッダー */
+header{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.header-logo{
+    margin-left: 130px;
+}
+
+.header-logo img{
+    width: 58px;
+    padding: 13px 0;
+}
+
+.header-nav ul{
+    margin-left: 350px;
+    display: flex;
+}
+
+.header-nav a{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: black;
+}
+
+.header-nav a:hover{
+    text-decoration: underline;
+    color: #494e75;
+}
+
+.header-icon{
+    display: flex;
+    margin-right: 15px;
+}
+
+.header-icon p{
+    margin: 0 15px;
+}
+
+.header-icon img{
+    width: 25px;
+}
