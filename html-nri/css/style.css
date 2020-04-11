@@ -66,3 +66,28 @@ header{
 .header-icon img{
     width: 25px;
 }
+
+/* main */
+main{
+    padding-top: 70px;
+}
+
+.breadcrumbs-list{
+    display: flex;
+    margin:0 0 30px 260px;
+}
+
+.breadcrumbs-list li{
+    font-size: 12px;
+    font-weight: 400;
+    color: #A4A4A4;
+}
+
+.breadcrumbs-list li::after{
+    content: ">";
+    padding: 0 2px;
+}
+
+.breadcrumbs-list li:last-child::after{
+    content: none;
+}
