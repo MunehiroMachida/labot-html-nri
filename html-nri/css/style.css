@@ -72,6 +72,7 @@ main{
     padding-top: 70px;
 }
 
+/* === パンクズリスト */
 .breadcrumbs-list{
     display: flex;
     margin:0 0 30px 260px;
@@ -90,4 +91,28 @@ main{
 
 .breadcrumbs-list li:last-child::after{
     content: none;
+}
+
+/* === fv */
+.fv{
+    position: relative;
+    margin-bottom: 30px;
+}
+.fv-title{
+    color: #ffffff;
+    display: flex;
+    flex-flow: column-reverse;
+    position: absolute;
+    top: 40px;
+    left: 390px;
+}
+
+.fv-title p{
+    margin-bottom: 35px;
+}
+
+.fv-img img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
 }
