@@ -38,8 +38,9 @@ header{
 }
 
 .header-nav ul{
-    margin-left: 350px;
+    width: 1000px;
     display: flex;
+    justify-content: flex-end;
 }
 
 .header-nav a{
