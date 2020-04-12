@@ -117,3 +117,92 @@ main{
     width: 100%;
     object-fit: cover;
 }
+
+.main-area{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.sns-icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.sns-icon li{
+    margin: 0 5px;
+}
+
+.sns-icon img{
+    width: 30px;
+}
+
+.main-contents h2{
+    margin-bottom: 20px;
+}
+
+.main-contents img{
+    width: 100%;
+}
+
+.main-area-txt{
+margin-bottom: 30px;
+}
+
+.main-area-txt p{
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+.btn-pdf{
+    width: 300px;
+    height: 60px;
+    background-color: #0A5BAC;
+    margin: 0 auto 50px;
+    position: relative;
+}
+
+.btn-pdf a{
+    width: 100%;
+    color: #DAE5F2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+}
+
+.btn-pdf a::before{
+    content: ">";
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+}
+
+.main-area-sublink{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.main-area-sublink a{
+    font-size: 15px;
+    color: #2753A3;
+    padding: 0 5px;
+}
+
+.main-area-sublink p::before{
+    content: "<";
+    color: #2753A3;
+}
+
+.main-area-sublink p:last-child::before{
+    content: "";
+}
+.main-area-sublink p:last-child::after{
+    content: ">";
+    color: #2753A3;
+}
