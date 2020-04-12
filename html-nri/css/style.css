@@ -268,3 +268,60 @@ margin-bottom: 30px;
     color: #2753A3;
     text-align: center; 
 }
+
+.company-info{
+    width: 70%;
+    margin: 0 auto;
+    border-top: solid 1px #494e75;
+    padding-top: 20px;
+}
+.company-info h2{
+    margin-bottom: 30px;
+    border-bottom: dotted 1px #494e75;
+    padding-bottom: 20px;
+}
+
+.company-info-list{
+    border-bottom: dotted 1px #494e75;
+}
+
+.company-info-list h3{
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.company-info-list ul{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.company-info-list li{
+    width: 25%;
+}
+
+.company-info-list li::before{
+    content: ">";
+    color: #85807F;
+}
+
+.company-info-list a{
+    color: #2753A3;
+    font-size: 14px;
+}
+
+.last-link{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.last-link::before{
+    content: "<";
+    font-size: 14px;
+    color: #85807F;
+    padding-right: 5px;
+}
+
+.last-link a{
+    color: #2753A3;
+}
