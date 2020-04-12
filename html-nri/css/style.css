@@ -333,6 +333,7 @@ margin-bottom: 30px;
     width: 100%;
     border-top: solid 2px #494e75;
     border-bottom: solid 2px #494e75;
+    margin-bottom: 50px;
 }
 
 .Follow-sns h3{
@@ -345,4 +346,48 @@ margin-bottom: 30px;
 
 .Follow-sns img{
     width: 35px;
+}
+
+.link-block{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.link-block ul{
+    width: 25%;
+    margin-bottom: 70px;
+}
+
+.link-block li{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: ;
+}
+
+.link-block h3{
+    margin-bottom: 15px;
+}
+
+.link-block a{
+    color: #323336;
+}
+
+.link-block a::before{
+    content: ">";
+    padding-right: 5px;
+}
+
+.link-bold a{
+    color: #323336;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.link-bold a::before{
+    content: ">";
+    font-weight: normal;
+    padding-right: 5px;
 }
