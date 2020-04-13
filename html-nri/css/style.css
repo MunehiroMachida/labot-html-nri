@@ -90,7 +90,7 @@ header{
 
 .header-icon p:hover{
     opacity: 0.5;
-    transition: 0.5;
+    transition: 0.5s;
 }
 /* ハンバーガーメニュー */
 #nav-humburger{
