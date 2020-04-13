@@ -312,6 +312,12 @@ margin-bottom: 30px;
     padding-top: 8px;
 }
 
+.strongpoint-area li:hover{
+    opacity: 0.9;
+    background-color: rgb(233, 233, 233);
+    transition: 0.5s;
+}
+
 .strongpoint-area-link-1,.strongpoint-area-link-2{
     display: flex;
     justify-content: space-between;
@@ -328,6 +334,7 @@ margin-bottom: 30px;
 
 .strongpoint-area-link-1 a,.strongpoint-area-link-2 a{
     color: #2753A3;
+    text-decoration: none;
 }
 
 .strongpoint-area-link-1 li{
