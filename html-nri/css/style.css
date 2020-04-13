@@ -198,6 +198,17 @@ margin-bottom: 30px;
     transform: translate(-50%, -50%);
 }
 
+.btn-pdf a::after{
+    content: url(../img/icon-pdf.svg);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-pdf:hover{
+    opacity: 0.7;
+    transition: 1s;
+}
+
 .main-area-sublink{
     display: flex;
     align-items: center;
