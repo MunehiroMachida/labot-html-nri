@@ -41,10 +41,10 @@ header{
     padding: 13px 0;
 }
 
-.header-icon{
+.header-menu{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     width: 61.5%;
 }
 
@@ -61,7 +61,6 @@ header{
 
 .header-nav a{
     font-size: 13px;
-    letter-spacing: -1px;
     font-weight: bold;
     margin: 0 10px;
     color: black;
@@ -71,12 +70,61 @@ header{
     text-decoration: none;
     border-bottom: solid 2px rgb(47, 59, 167);
     padding-bottom: 10px;
-    color: #494e75;
+    color: #0A5BAC;
 }
 
-.header-icon img{
+.header-menu img{
     width: 20px;
 }
+
+.header-icon{
+    display: flex;
+    align-items: flex-end;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.header-icon p{
+    margin: 0 15px;
+}
+
+.header-icon p:hover{
+    opacity: 0.5;
+    transition: 0.5;
+}
+/* ハンバーガーメニュー */
+#nav-humburger{
+    position: relative;
+}
+
+.humbergar-none{
+    display: none;
+}
+
+#nav-open{
+    display: block;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#nav-open span{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: rgb(27, 25, 27);
+    display: block;
+    
+}
+
+.icon-line2{
+    margin-top: 8px;
+}
+
+.icon-line3{
+    margin-top: 16px;
+}
+/* ハンバーガーメニュー end*/
 
 /* main */
 main{
@@ -162,6 +210,16 @@ main{
     letter-spacing: 2px;
 }
 
+.main-contents h2::before{
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-image: url(../img/bg-heading-h2.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 .main-contents img{
     width: 100%;
 }
@@ -193,6 +251,7 @@ margin-bottom: 30px;
     text-align: center;
     display: block;
     padding: 10px 0;
+    text-decoration: none;
 }
 
 .btn-pdf a::before{
