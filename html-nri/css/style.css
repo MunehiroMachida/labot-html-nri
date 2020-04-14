@@ -56,7 +56,7 @@ header{
 .header-nav li{
     padding: 0;
     margin: 0;
-    letter-spacing: 1px;
+    font-feature-settings: "palt";
 }
 
 .header-nav a{
