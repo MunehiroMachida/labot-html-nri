@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>HTML/CSS-家具屋</title>
 </head>
-
 <body>
     <header>
         <div class="header-container">
@@ -24,49 +23,60 @@
     <main>
         <section class="fv">
             <h1 class="fv-title">We propose a life.</h1>
-            <p class="fv-img"><img src="./img/home_top.png" srcset="img/home_top.png 1x,img/home_top@2x.png 2x" alt="メインimg"></p>
+            <p class="fv-img"><img src="./img/home_top.png" srcset="img/home_top.png 1x,img/home_top@2x.png 2x" alt="メイン"></p>
         </section>
-        <section class="concept">
-            <div class="concept-txt">
-                <h2>暮らしを提案する。</h2>
-                <p>私たちは、家具を売るのではなく、お客様の理想とする<br>
-                    「暮らし」を提案します。</p>
-                <p>仕事で疲れた後に帰りたくなる、<br>
-                    今日も１日頑張ろうと思える、<br>
-                    そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
+        <div class="contents-wrap">
+            <div class="concept">
+                <section class="concept-text">
+                    <h2>暮らしを提案する。</h2>
+                    <p>私たちは、家具を売るのではなく、お客様の理想とする<br>
+                        「暮らし」を提案します。</p>
+                    <p>仕事で疲れた後に帰りたくなる、<br>
+                        今日も１日頑張ろうと思える、<br>
+                        そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
+                </section>
+                <p class="concept-img"><img src="./img/concept.png" srcset="img/concept.png 1x,img/concept@2x.png 2x" alt="暮らし"></p>
             </div>
-            <p class="concept-img"><img src="./img/concept.png" srcset="img/concept.png 1x,img/concept@2x.png 2x" alt="暮らしimg"></p>
-        </section>
-        <section class="news-container">
-            <h2>NEWS</h2>
-            <ul class="news-about">
-                <li><img src="./img/news01.png" srcset="img/news01.png 1x,img/news01@2x.png 2x" alt="ソファー"></li>
-                <li><img src="./img/news02.png" srcset="img/news02.png 1x,img/news02@2x.png 2x" alt="チェア"></li>
-                <li><img src="./img/news03.png" srcset="img/news03.png 1x,img/news03@2x.png 2x" alt="テーブル"></li>
-            </ul>
-            <p class="news-more"><a href="#">view more</a></p>
-        </section>
-        <section class="catalog">
-            <h2>公式カタログ</h2>
-            <p class="catalog-txt">様々なスタイルをご提案いたします。オーダーメイドも可能です。<br>
-                詳しくはカタログをご覧ください。</p>
-            <p class="catalog-download"><a href="#">カタログをダウンロード</a></p>
-        </section>
-        <section class="contact">
-            <h2>CONTACT</h2>
-            <form action="#">
-                <p><input type="text" name="name"></p>
-                <p><input type="text" name="email"></p>
-                <p><textarea name="contact"></textarea></p>
-                <p><input type="submit" value="SEND"></p>
-            </form>
-        </section>
-        <section class="recruit">
-            <h2>RECRUIT</h2>
-            <p>現在Staffを募集しております。<br>
-                詳しくは詳細ページをご覧ください。</p>
+            <section class="news-container">
+                <h2>NEWS</h2>
+                <div class="news-img-box">
+                    <ul class="news-about">
+                        <li class="news-about-img"><img src="./img/news01.png" srcset="img/news01.png 1x,img/news01@2x.png 2x" alt="ソファー"></li>
+                        <li class="news-about-text">アームストロングのカウチ入荷</li>
+                    </ul>
+                    <ul class="news-about">
+                        <li class="news-about-img"><img src="./img/news02.png" srcset="img/news02.png 1x,img/news02@2x.png 2x" alt="チェア"></li>
+                        <li class="news-about-text">アームストロングのチェア再入荷</li>
+                    </ul>
+                    <ul class="news-about">
+                        <li class="news-about-img"><img src="./img/news03.png" srcset="img/news03.png 1x,img/news03@2x.png 2x" alt="テーブル"></li>
+                        <li class="news-about-text"><span>アームストロングのテーブル入荷</span></li>
+                    </ul>
+                </div>
+                <p class="news-more"><a href="#">view more</a></p>
+            </section>
+            <section class="catalog">
+                <h2>公式カタログ</h2>
+                <p class="catalog-text">様々なスタイルをご提案いたします。オーダーメイドも可能です。<br>
+                    詳しくはカタログをご覧ください。</p>
+                <p class="catalog-download"><a href="#">カタログをダウンロード</a></p>
+            </section>
+            <section class="contact">
+                <h2>CONTACT</h2>
+                <form action="#">
+                    <p class="contact-name"><input type="text" name="name" placeholder="お名前"></p>
+                    <p class="contact-email"><input type="email" name="email" placeholder="メールアドレス"></p>
+                    <p class="contact-textarea"><textarea name="contact" placeholder="お問い合わせ内容"></textarea></p>
+                    <p class="contact-submit"><input type="submit" value="SEND"></p>
+                </form>
+            </section>
+            <section class="recruit">
+                <h2>RECRUIT</h2>
+                <p>現在Staffを募集しております。<br>
+                    詳しくは詳細ページをご覧ください。</p>
                 <p class="recruit-more"><a href="#">view more</a></p>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -83,5 +93,4 @@
         <p><small>&copy;HTMLCSS.code</small></p>
     </footer>
 </body>
-
 </html>
