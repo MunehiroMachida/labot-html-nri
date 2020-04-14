@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="LABOT/nri-の課題">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
     <title>html-nri課題</title>
 </head>
@@ -10,22 +10,33 @@
     <!-- ======= ヘッダーstart ===== -->
     <header>
         <p class="header-logo"><img src="./img/nri-logo.png" alt="NRIロゴ"></p>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="#">ナレッジ・インサイト</a></li>
-                <li><a href="#">ソリューション・サービス</a></li>
-                <li><a href="#">サステナビリティ</a></li>
-                <li><a href="#">ニュース</a></li>
-                <li><a href="#">企業情報</a></li>
-                <li><a href="#">株主・投資家情報(IR)</a></li>
-                <li><a href="#">採用情報</a></li>
-            </ul>
-        </nav>
-        <div class="header-icon">
-            <p><img src="./img/earth.svg" alt="言語"></p>
-            <p><img src="./img/glass.svg" alt="検索"></p>
-            <!-- ======= ハンバーガーメニューstart ===== -->
-            <!-- ======= ハンバーガーメニューend ===== -->
+        <div class="header-menu">
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">ナレッジ・インサイト</a></li>
+                    <li><a href="#">ソリューション・サービス</a></li>
+                    <li><a href="#">サステナビリティ</a></li>
+                    <li><a href="#">ニュース</a></li>
+                    <li><a href="#">企業情報</a></li>
+                    <li><a href="#">株主・投資家情報(IR)</a></li>
+                    <li><a href="#">採用情報</a></li>
+                </ul>
+            </nav>
+            <div class="header-icon">
+                <p><img src="./img/glass.svg" alt="検索"></p>
+                <p><img src="./img/earth.svg" alt="言語"></p>
+                <!-- ======= ハンバーガーメニューstart ===== -->
+                <p id="hamburger">
+                    <input type="checkbox" name="name" id="humbergar" class="humbergar-none">
+                    <!-- 以下ハンバーガーアイコン -->
+                    <label id="nav-open" for="humbergar">
+                        <span class="icon-line1"></span>
+                        <span class="icon-line2"></span>
+                        <span class="icon-line3"></span>
+                    </label>
+                </p>
+                <!-- ======= ハンバーガーメニューend ===== -->
+            </div>
         </div>
     </header>
     <!-- ======= ヘッダーend ===== -->
@@ -43,7 +54,7 @@
                 <h1>NRIのデジタルビジネス戦略</h1>
                 <p>NRIの強み</p>
             </div>
-            <!-- <p class="fv-img"><img src="./img/h1_whats_2.jpg" alt=""></p>   １度目提出時と変更。背景として使う。 -->
+            <p class="fv-img"><img src="./img/h1_whats_2.jpg" alt=""></p>
         </section>
         <div class="main-area">
             <ul class="sns-icon">
@@ -71,12 +82,12 @@
             </div>
             <div class="strongpoint-area">
                 <h3>NRIの強み</h3>
-                <ul class="strongpoint-area-link">
+                <ul class="strongpoint-area-link-1">
                     <li><a href="#">NRIのあゆみと持続的な成長</a></li>
                     <li><a href="#">問題発見から問題解決まで</a></li>
                     <li><a href="#">強固な顧客基盤</a></li>
                 </ul>
-                <ul class="strongpoint-area-link">
+                <ul class="strongpoint-area-link-2">
                     <li><a href="#">ビジネスモデルの特徴</a></li>
                     <li><a href="#">人材が支えるNRI</a></li>
                     <li><a href="#">業界トップクラスの収益力</a></li>
@@ -168,7 +179,7 @@
         <div class="page-link-area">
             <div class="link-block">
                 <ul>
-                    <li><h3><a href="#">ナレッジ・インサイト</a></h3></li>
+                    <li class="link-block-title"><h3><a href="#">ナレッジ・インサイト</a></h3></li>
                     <li><a href="#">刊行物</a></li>
                     <li><a href="#">書籍</a></li>
                     <li><a href="#">コラム</a></li>
@@ -177,7 +188,7 @@
                     <li><a href="#">用語解説</a></li>
                 </ul>
                 <ul>
-                    <li><h3><a href="#">ソリューション・サービス</a></h3></li>
+                    <li class="link-block-title"><h3><a href="#">ソリューション・サービス</a></h3></li>
                     <li><a href="#">マネジメントコンサルティング</a></li>
                     <li><a href="#">システムコンサルティング</a></li>
                     <li><a href="#">金融ITソリューション</a></li>
@@ -188,13 +199,13 @@
                     <li><a href="#">未来創発センター</a></li>
                 </ul>
                 <ul>
-                    <li><h3><a href="#">サステナビリティ</a></h3></li>
+                    <li class="link-block-title"><h3><a href="#">サステナビリティ</a></h3></li>
                     <li><a href="#">サステナビリティマネジメント</a></li>
                     <li><a href="#">取り組み</a></li>
                     <li><a href="#">ライブラリ</a></li>
                 </ul>
                 <ul>
-                    <li><h3><a href="#">ニュース</a></h3></li>
+                    <li class="link-block-title"><h3><a href="#">ニュース</a></h3></li>
                     <li><a href="#">ニュースリリース</a></li>
                     <li><a href="#">お知らせ</a></li>
                     <li><a href="#">イベント</a></li>
@@ -202,7 +213,7 @@
             </div>
             <div class="link-block">
                 <ul>
-                    <li><h3><a href="#">企業情報</a></h3></li>
+                    <li class="link-block-title"><h3><a href="#">企業情報</a></h3></li>
                     <li><a href="#">社長メッセージ</a></li>
                     <li><a href="#">経営方針</a></li>
                     <li><a href="#">NRIの強み</a></li>
@@ -210,7 +221,7 @@
                     <li><a href="#">国内・海外拠点</a></li>
                 </ul>
                 <ul>
-                    <li><h3><a href="#">株主・投資家情報（IR）</a></h3></li>
+                    <li class="link-block-title"><h3><a href="#">株主・投資家情報（IR）</a></h3></li>
                     <li><a href="#">IRニュース</a></li>
                     <li><a href="#">IRイベント</a></li>
                     <li><a href="#">経営方針</a></li>
