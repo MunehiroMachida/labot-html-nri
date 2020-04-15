@@ -56,3 +56,31 @@ header{
 .on a{
     color: #3B3B3B;
 }
+/* ここまでヘッダー */
+
+main{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.fv{
+    height: 744px;
+    background: url(../img/home_top.png)no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.fv-title{
+    background-color: #FFFFFF;
+    letter-spacing: 1px;
+    font-size: 53px;
+    font-weight: normal;
+    color: #918F89;
+    text-align: right;
+    padding: 32px;
+    width: 545px;
+    opacity: 0.8;
+    position: absolute;
+    top: 274px;
+    left: 0;
+}
