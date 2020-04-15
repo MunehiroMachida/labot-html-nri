@@ -43,14 +43,22 @@ header{
 }
 
 .header-nav{
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .header-nav ul{
     display: flex;
 }
 
 .header-nav li{
-    margin: 0 28px;
+    margin: 0 26px;
+}
+
+.header-nav li:last-child{
+    margin: 0 0 0 28px;
+}
+
+.header-nav a{
+    font-size: 15px;
 }
 
 .on a{
@@ -74,12 +82,12 @@ main{
 
 .fv-title{
     background-color: #FFFFFF;
-    letter-spacing: 1px;
+    letter-spacing: 0.9px;
     font-size: 53px;
     font-weight: normal;
     color: #918F89;
     text-align: right;
-    padding: 32px;
+    padding: 41px 32px 41px 33px;
     width: 545px;
     opacity: 0.8;
     position: absolute;
@@ -89,7 +97,7 @@ main{
 /* ここまでfv */
 
 .contents-wrap{
-    width: 85%;
+    width: 86%;
     margin: 0 auto;
 }
 
@@ -103,18 +111,20 @@ main{
 }
 
 .concept-text{
-    margin-top: 180px;
-    padding-right: 100px;
+    margin-top: 162px;
+    padding-right: 92px;
 }
 .concept-text h2{
     font-size: 25px;
     font-weight: normal;
-    margin-bottom: 71px;
+    margin-bottom: 63px;
+    letter-spacing: 2.5px;
 }
 
 .concept-text p{
     font-size: 12px;
     line-height: 30px;
+    letter-spacing: 0.7px;
 }
 
 .concept-img img{
@@ -130,9 +140,10 @@ main{
 .news-container h2{
     text-align: center;
     color: #3B3B3B;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: normal;
     margin-bottom: 48px;
+    letter-spacing: 2.6px;
 }
 
 .news-img-box{
@@ -179,6 +190,7 @@ main{
     color: #3B3B3B;
     font-size: 18px;
     opacity: 0.7;
+    letter-spacing: 0.9px;
 }
 
 .news-more::after{
@@ -200,6 +212,7 @@ main{
     font-size: 24px;
     font-weight: normal;
     margin-bottom: 48px;
+    letter-spacing: 2.3px;
 }
 
 .catalog p{
@@ -238,6 +251,7 @@ main{
     margin-bottom: 47px;
     font-size: 24px;
     font-weight: normal;
+    letter-spacing: 2.4px;
 }
 
 .contact-name input,
@@ -265,6 +279,7 @@ form input{
 textarea{
     height: 200px;
     padding: 10px 0 10px 16px;
+    resize: none;
 }
 
 .contact-submit input{
@@ -276,6 +291,7 @@ textarea{
     color: #707070;
     opacity: 1;
     font-size: 14px;
+    letter-spacing: 1.4px;
 }
 /* form部分 */
 
@@ -289,12 +305,14 @@ textarea{
     color: #3B3B3B;
     font-weight: normal;
     margin-bottom: 48px;
+    letter-spacing: 2.4px;
 }
 
 .recruit p{
     font-size: 15px;
     line-height: 2;
     color: #3B3B3B;
+    letter-spacing: 0.45px;
 }
 
 .recruit-more{
@@ -302,6 +320,7 @@ textarea{
     color: #3B3B3B;
     font-size: 18px;
     opacity: 0.7;
+    letter-spacing: 0.9px;
 }
 
 .recruit-more::after{
@@ -349,4 +368,5 @@ footer{
 footer small{
     color: #ffffff;
     font-size: 11px;
+    letter-spacing: 0.44px;
 }
