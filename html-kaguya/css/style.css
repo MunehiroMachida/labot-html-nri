@@ -189,3 +189,41 @@ main{
     opacity: 0.3;
 }
 /* ここまでNEWS */
+
+.catalog{
+    text-align: center;
+    color: #3B3B3B;
+}
+
+.catalog h2{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 48px;
+}
+
+.catalog p{
+    line-height: 2;
+    margin-bottom: 40px;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+}
+
+.catalog-download{
+    margin: 0 auto;
+    width: 344px;
+    height: 56px;
+    border-radius: 40px;
+    background-color: #D1D1D1;
+    position: relative;
+}
+
+.catalog-download a{
+    width: 100%;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #707070;
+}
+/* ここまでカタログ */
