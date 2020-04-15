@@ -61,6 +61,7 @@ header{
 main{
     max-width: 1280px;
     margin: 0 auto;
+    background-color: #FCFCFC;
 }
 
 .fv{
@@ -68,6 +69,7 @@ main{
     background: url(../img/home_top.png)no-repeat;
     background-size: 100%;
     position: relative;
+    margin-bottom: 80px;
 }
 
 .fv-title{
@@ -83,4 +85,38 @@ main{
     position: absolute;
     top: 274px;
     left: 0;
+}
+/* ここまでfv */
+
+.contents-wrap{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.concept{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    color: #3B3B3B;
+}
+
+.concept-text{
+    margin-top: 180px;
+    padding-right: 100px;
+}
+.concept-text h2{
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 71px;
+}
+
+.concept-text p{
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.concept-img img{
+    width: 560px;
+    height: 560px;
 }
