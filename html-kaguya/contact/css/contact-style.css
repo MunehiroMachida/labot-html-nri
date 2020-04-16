@@ -1,5 +1,5 @@
 body{
-    font-family:"noto sans JP" sans-serif;
+    font-family:"Noto Sans" sans-serif;
     font-size: 16px;
     line-height: 1;
 }
@@ -104,11 +104,13 @@ main{
 .contact{
     text-align: center;
     margin-bottom: 240px;
+    font-family: "Noto Sans ";
 }
 
 .contact h2{
     margin-bottom: 47px;
     font-size: 24px;
+    color: #3B3B3B;
     font-weight: normal;
     letter-spacing: 2.4px;
 }
@@ -130,7 +132,7 @@ form input::placeholder,
 textarea::placeholder{
     color: #3B3B3B;
     font-size: 12px;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Sans";
 }
 
 form input{

@@ -280,7 +280,7 @@ form input::placeholder,
 textarea::placeholder{
     color: #3B3B3B;
     font-size: 12px;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Sans";
 }
 
 form input{
