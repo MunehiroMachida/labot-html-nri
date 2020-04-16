@@ -1,5 +1,5 @@
 body{
-    font-family: sans-serif;
+    font-family:"noto sans JP" sans-serif;
     font-size: 16px;
     line-height: 1;
 }
@@ -73,46 +73,39 @@ main{
 }
 
 .fv{
-    height: 744px;
+    height: 456px;
     background: url(/img/news_top.png)no-repeat;
     background-size: 100%;
+    margin-bottom: 160px;
     position: relative;
-    margin-bottom: 80px;
 }
 
 .sub-page-title{
-    background-color: #FFFFFF;
     letter-spacing: 0.9px;
-    font-size: 53px;
+    font-size: 30px;
     font-weight: normal;
     color: #918F89;
-    text-align: right;
-    padding: 41px 32px 41px 33px;
-    width: 545px;
-    opacity: 0.8;
     position: absolute;
-    top: 274px;
-    left: 0;
+    top: 195px;
+    left:228px;
+}
+
+.news-title{
+    color: #918F89;
 }
 /* ここまでfv */
 
 .contents-wrap{
-    width: 86%;
-    margin: 0 auto;
-}
-
-
-
-.news-container{
-    margin-bottom: 240px;
+    width: 85%;
+    margin: 0 auto 320px;
 }
 
 .news-container h2{
     text-align: center;
     color: #3B3B3B;
-    font-size: 21px;
+    font-size: 23px;
     font-weight: normal;
-    margin-bottom: 48px;
+    margin-bottom: 55px;
     letter-spacing: 2.6px;
 }
 
@@ -143,32 +136,16 @@ main{
 }
 
 .news-about-text{
-    font-size: 14px;
+    font-size: 17px;
     width: 100%;
     text-align: center;
     color: #FFFFFF;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 30;
     letter-spacing: -0.7px;
-}
-
-.news-more{
-    text-align: center;
-    color: #3B3B3B;
-    font-size: 18px;
-    opacity: 0.7;
-    letter-spacing: 0.9px;
-}
-
-.news-more::after{
-    content: ">";
-    padding-left: 7px;
-    color: #3B3B3B;
-    font-size: 16px;
-    opacity: 0.3;
 }
 /* ここまでNEWS */
 
@@ -182,7 +159,7 @@ footer{
 }
 
 .footer-container{
-    width: 66%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -199,6 +176,7 @@ footer{
 .footer-nav ul{
     display: flex;
     justify-content: space-between;
+    padding-top: 4px;
 }
 
 .footer-nav a{
