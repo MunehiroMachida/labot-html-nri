@@ -1,5 +1,5 @@
 body{
-    font-family:sans-serif;
+    font-family:"Noto Sans Japanese", sans-serif;
     font-size: 16px;
     line-height: 1;
 }
@@ -264,12 +264,14 @@ main{
     text-decoration: none;
     border: 1px solid #707070;
     opacity: 0.6;
+    letter-spacing: 0.6px;
 }
 
 form input::placeholder,
 textarea::placeholder{
     color: #3B3B3B;
     opacity: 0.4;
+    font-size: 12px;
 }
 
 form input{
