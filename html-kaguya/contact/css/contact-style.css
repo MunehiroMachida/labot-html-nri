@@ -84,14 +84,13 @@ main{
     letter-spacing: 0.9px;
     font-size: 30px;
     font-weight: normal;
-    color: #918F89;
     position: absolute;
     top: 195px;
     left:228px;
 }
 
-.news-title{
-    color: #918F89;
+.contact-title{
+    color: #FCFCFC;
 }
 /* ここまでfv */
 
