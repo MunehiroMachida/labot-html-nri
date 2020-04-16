@@ -1,0 +1,390 @@
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+    color: #B2B2B2;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ol,ul,li{
+    list-style: none;
+}
+body,p,ol,ul,li,a,h1,h2,h3,small,table,td,th,tr{
+    margin: 0;
+    padding: 0;
+}
+/* ===== ここまでリセットCSS ===== */
+header{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #FCFCFC;
+}
+
+.header-container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo img{
+    width: 38px;
+    height: 24px;
+    padding: 16px 0;
+}
+
+.header-nav{
+    padding-top: 15px;
+}
+.header-nav ul{
+    display: flex;
+}
+
+.header-nav li{
+    margin: 0 26px;
+}
+
+.header-nav li:last-child{
+    margin: 0 0 0 28px;
+}
+
+.header-nav a{
+    font-size: 15px;
+}
+
+.on a{
+    color: #3B3B3B;
+}
+/* ここまでヘッダー */
+
+main{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #FCFCFC;
+}
+
+.fv{
+    height: 744px;
+    background: url(../img/home_top.png)no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.fv-title{
+    background-color: #FFFFFF;
+    letter-spacing: 0.9px;
+    font-size: 53px;
+    font-weight: normal;
+    color: #918F89;
+    text-align: right;
+    padding: 41px 32px 41px 33px;
+    width: 545px;
+    opacity: 0.8;
+    position: absolute;
+    top: 274px;
+    left: 0;
+}
+/* ここまでfv */
+
+.contents-wrap{
+    width: 86%;
+    margin: 0 auto;
+}
+
+.concept{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    color: #3B3B3B;
+    margin-bottom: 240px;
+}
+
+.concept-text{
+    margin-top: 162px;
+    padding-right: 92px;
+}
+.concept-text h2{
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 63px;
+    letter-spacing: 2.5px;
+}
+
+.concept-text p{
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 0.7px;
+}
+
+.concept-img img{
+    width: 560px;
+    height: 560px;
+}
+/* ここまで暮らし〜 */
+
+.news-container{
+    margin-bottom: 240px;
+}
+
+.news-container h2{
+    text-align: center;
+    color: #3B3B3B;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 48px;
+    letter-spacing: 2.6px;
+}
+
+.news-img-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+}
+
+.news-about{
+    position: relative;
+    z-index: 10;
+}
+
+.news-about-img img{
+    width: 320px;
+    height: 320px;
+}
+
+.news-about-shadow{
+    background-color: #000000;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+
+.news-about-text{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    letter-spacing: -0.7px;
+}
+
+.news-more{
+    text-align: center;
+    color: #3B3B3B;
+    font-size: 18px;
+    opacity: 0.7;
+    letter-spacing: 0.9px;
+}
+
+.news-more::after{
+    content: ">";
+    padding-left: 7px;
+    color: #3B3B3B;
+    font-size: 16px;
+    opacity: 0.3;
+}
+/* ここまでNEWS */
+
+.catalog{
+    text-align: center;
+    color: #3B3B3B;
+    margin-bottom: 240px;
+}
+
+.catalog h2{
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 48px;
+    letter-spacing: 2.3px;
+}
+
+.catalog p{
+    line-height: 2;
+    margin-bottom: 40px;
+    font-size: 15px;
+    letter-spacing: 0.45px;
+}
+
+.catalog-download{
+    margin: 0 auto;
+    width: 344px;
+    height: 56px;
+    border-radius: 40px;
+    background-color: #D1D1D1;
+    position: relative;
+}
+
+.catalog-download a{
+    width: 100%;
+    letter-spacing: 1.8px;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 10px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #707070;
+}
+
+.catalog-download a:hover{
+    border-radius: 40px;
+    color: #FCFCFC;
+    background-color: #B2B2B2;
+}
+/* ここまでカタログ */
+
+.contact{
+    text-align: center;
+    margin-bottom: 240px;
+}
+
+.contact h2{
+    margin-bottom: 47px;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 2.4px;
+}
+
+.contact-name input,
+.contact-email input,
+.contact-textarea textarea,
+.contact-submit input{
+    width: 454px;
+    margin: 0 auto 24px;
+    border-radius: 16px;
+    text-decoration: none;
+    border: 1px solid #707070;
+    opacity: 0.6;
+    letter-spacing: 0.6px;
+}
+
+form input::placeholder,
+textarea::placeholder{
+    color: #3B3B3B;
+    font-size: 12px;
+    font-family: "Noto Sans JP";
+}
+
+form input{
+    padding: 10px 0 10px 16px;
+}
+
+textarea{
+    height: 200px;
+    padding: 10px 0 10px 16px;
+    resize: none;
+}
+
+.contact-submit input{
+    padding: 0;
+    width: 161px;
+    height: 32px;
+    background: #D1D1D1;
+    border: none;
+    color: #707070;
+    opacity: 1;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+.contact-submit input:hover{
+    border-radius: 40px;
+    color: #FCFCFC;
+    background-color: #B2B2B2;
+}
+/* form部分 */
+
+.recruit{
+    text-align: center;
+    padding-bottom: 320px;
+}
+
+.recruit h2{
+    font-size: 24px;
+    color: #3B3B3B;
+    font-weight: normal;
+    margin-bottom: 48px;
+    letter-spacing: 2.4px;
+}
+
+.recruit p{
+    font-size: 15px;
+    line-height: 2;
+    color: #3B3B3B;
+    letter-spacing: 0.45px;
+    margin-bottom: 32px;
+}
+
+.recruit-more{
+    text-align: center;
+    color: #3B3B3B;
+    font-size: 18px;
+    opacity: 0.7;
+    letter-spacing: 0.9px;
+}
+
+.recruit-more::after{
+    content: ">";
+    padding-left: 7px;
+    color: #3B3B3B;
+    font-size: 16px;
+    opacity: 0.3;
+}
+/* ここまでRECRUIT */
+
+footer{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #918F89;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.footer-container{
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.footer-logo{
+    margin-bottom: 41px;
+}
+
+.footer-nav{
+    width: 42%;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav a{
+    color: #ffffff;
+}
+
+footer small{
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing: 0.44px;
+}

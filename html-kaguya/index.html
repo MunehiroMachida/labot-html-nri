@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet">
     <title>HTML/CSS-家具屋</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
             <p class="header-logo"><img src="./img/logo_header.png" srcset="./img/logo_header.png 1x,img/logo_header@2x.png 2x" alt="HTML/CSS"></p>
             <nav class="header-nav">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                    <li class="on"><a href="index.html">HOME</a></li>
                     <li><a href="./news/news.html">NEWS</a></li>
                     <li><a href="./recruit/recruit.html">RECRUIT</a></li>
                     <li><a href="./contact/contact.html">CONTACT</a></li>
@@ -42,18 +43,21 @@
                 <div class="news-img-box">
                     <ul class="news-about">
                         <li class="news-about-img"><img src="./img/news01.png" srcset="img/news01.png 1x,img/news01@2x.png 2x" alt="ソファー"></li>
+                        <li class="news-about-shadow"></li>
                         <li class="news-about-text">アームストロングのカウチ入荷</li>
                     </ul>
                     <ul class="news-about">
                         <li class="news-about-img"><img src="./img/news02.png" srcset="img/news02.png 1x,img/news02@2x.png 2x" alt="チェア"></li>
+                        <li class="news-about-shadow"></li>
                         <li class="news-about-text">アームストロングのチェア再入荷</li>
                     </ul>
                     <ul class="news-about">
                         <li class="news-about-img"><img src="./img/news03.png" srcset="img/news03.png 1x,img/news03@2x.png 2x" alt="テーブル"></li>
+                        <li class="news-about-shadow"></li>
                         <li class="news-about-text"><span>アームストロングのテーブル入荷</span></li>
                     </ul>
                 </div>
-                <p class="news-more"><a href="#">view more</a></p>
+                <p class="news-more"><a href="/news/news.html">view more</a></p>
             </section>
             <section class="catalog">
                 <h2>公式カタログ</h2>
@@ -74,7 +78,7 @@
                 <h2>RECRUIT</h2>
                 <p>現在Staffを募集しております。<br>
                     詳しくは詳細ページをご覧ください。</p>
-                <p class="recruit-more"><a href="#">view more</a></p>
+                <p class="recruit-more"><a href="/recruit/recruit.html">view more</a></p>
             </section>
         </div>
     </main>
