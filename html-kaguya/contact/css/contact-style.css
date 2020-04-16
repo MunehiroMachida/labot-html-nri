@@ -97,30 +97,35 @@ main{
 .contents-wrap{
     width: 85%;
     margin: 0 auto;
-    padding-bottom: 320px;
+    padding-bottom: 298px;
 }
 
 
 .contact{
     text-align: center;
-    margin-bottom: 240px;
-    font-family: "Noto Sans ";
+    font-family: "Noto Sans";
 }
 
 .contact h2{
-    margin-bottom: 47px;
+    margin-bottom: 40px;
     font-size: 24px;
     color: #3B3B3B;
     font-weight: normal;
     letter-spacing: 2.4px;
 }
 
+.contact-sub-text{
+    margin-bottom: 72px;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+
 .contact-name input,
 .contact-email input,
 .contact-textarea textarea,
 .contact-submit input{
-    width: 454px;
-    margin: 0 auto 24px;
+    width: 444px;
+    margin: 0 auto 22px;
     border-radius: 16px;
     text-decoration: none;
     border: 1px solid #707070;
@@ -136,12 +141,16 @@ textarea::placeholder{
 }
 
 form input{
-    padding: 10px 0 10px 16px;
+    padding: 10px 0 9px 4px;
+}
+
+.contact-textarea{
+    margin-bottom: 15px;
 }
 
 textarea{
-    height: 200px;
-    padding: 10px 0 10px 16px;
+    height: 196px;
+    padding: 6px 0 0 8px;
     resize: none;
 }
 
@@ -163,14 +172,6 @@ textarea{
     background-color: #B2B2B2;
 }
 /* form部分 */
-
-
-
-
-
-
-
-
 
 footer{
     width: 100%;
