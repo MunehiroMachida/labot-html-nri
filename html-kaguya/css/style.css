@@ -1,5 +1,5 @@
 body{
-    font-family:"Noto Sans Japanese", sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     line-height: 1;
 }
@@ -280,6 +280,7 @@ form input::placeholder,
 textarea::placeholder{
     color: #3B3B3B;
     font-size: 12px;
+    font-family: "Noto Sans JP";
 }
 
 form input{
