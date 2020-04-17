@@ -116,19 +116,22 @@ main{
 .recruit-info-table{
     width: 640px;
     height: 624px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    color: #3B3B3B;
-    border: solid 1px #707070;
     font-family: "Noto Sans";
     color: #3B3B3B;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #3B3B3B;
+    border: solid 1px #707070;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .recruit-info-table th{
     width: 142px;
     font-size: 16px;
     font-weight: normal;
-    border: solid 1px #707070;
+    /* border-top: solid 1px #707070; */
     background-color: #DCDBD9;
 }
 
