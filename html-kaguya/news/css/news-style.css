@@ -74,7 +74,7 @@ main{
 
 .fv{
     height: 456px;
-    background: url(/img/news_top.png)no-repeat;
+    background: url(../../img/news_top.png)no-repeat;
     background-size: 100%;
     margin-bottom: 160px;
     position: relative;
