@@ -125,6 +125,47 @@ main{
     top: 274px;
     left: 0;
 }
+
+@media screen and (max-width:768px){
+    .fv{
+        background: url(../img/home_top_sp.png)no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        margin-bottom: 0;
+    }
+    
+    .fv-title{
+        font-size: 39px;
+        font-weight: normal;
+        color: #918F89;
+        text-align: left;
+        padding:0;
+        width: 0;
+        position: absolute;
+        top: 185px;
+        left: 0;
+    }
+    .fv-title span{
+        display: block;
+        background-color: #FFFFFF;
+        margin-bottom: 16px;
+        letter-spacing: 1;
+        padding: 16px 16px 16px 54px;
+        height: 48px;
+        display: flex;
+        align-items: flex-end;
+        opacity: 0.8;
+    }
+    .fv-title-we{
+        width: 66px;
+    }
+    .fv-title-propose{
+        width: 170px;
+    }
+    .fv-title-life{
+        width: 114px;
+    }
+}
 /* ここまでfv */
 
 .contents-wrap{
