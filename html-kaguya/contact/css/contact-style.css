@@ -1,0 +1,215 @@
+body{
+    font-family:Noto Sans sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+    color: #B2B2B2;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ol,ul,li{
+    list-style: none;
+}
+body,p,ol,ul,li,a,h1,h2,h3,small,table,td,th,tr{
+    margin: 0;
+    padding: 0;
+}
+/* ===== ここまでリセットCSS ===== */
+header{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #FCFCFC;
+}
+
+.header-container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo img{
+    width: 38px;
+    height: 24px;
+    padding: 16px 0;
+}
+
+.header-nav{
+    padding-top: 15px;
+}
+.header-nav ul{
+    display: flex;
+}
+
+.header-nav li{
+    margin: 0 26px;
+}
+
+.header-nav li:last-child{
+    margin: 0 0 0 28px;
+}
+
+.header-nav a{
+    font-size: 15px;
+}
+
+.active-page a{
+    color: #3B3B3B;
+}
+/* ここまでヘッダー */
+
+main{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #FCFCFC;
+}
+
+.fv{
+    height: 456px;
+    background: url(../../img/contact_top.png)no-repeat;
+    background-size: 100%;
+    margin-bottom: 160px;
+    position: relative;
+}
+
+.sub-page-title{
+    letter-spacing: 0.9px;
+    font-size: 30px;
+    font-weight: normal;
+    position: absolute;
+    top: 195px;
+    left:228px;
+}
+
+.contact-title{
+    color: #FCFCFC;
+}
+/* ここまでfv */
+
+.contents-wrap{
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 298px;
+}
+
+
+.contact{
+    text-align: center;
+    font-family: "Noto Sans";
+}
+
+.contact h2{
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #3B3B3B;
+    font-weight: normal;
+    letter-spacing: 2.4px;
+}
+
+.contact-sub-text{
+    margin-bottom: 72px;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+
+.contact-name input,
+.contact-email input,
+.contact-textarea textarea,
+.contact-submit input{
+    width: 444px;
+    margin: 0 auto 22px;
+    border-radius: 16px;
+    text-decoration: none;
+    border: 1px solid #707070;
+    opacity: 0.6;
+    letter-spacing: 0.6px;
+}
+
+form input::placeholder,
+textarea::placeholder{
+    color: #3B3B3B;
+    font-size: 12px;
+    font-family: "Noto Sans";
+    padding-left: 16px;
+}
+
+form input{
+    padding: 10px 0 9px 4px;
+}
+
+.contact-textarea{
+    margin-bottom: 15px;
+}
+
+textarea{
+    height: 196px;
+    padding: 6px 0 0 8px;
+    resize: none;
+}
+
+.contact-submit input{
+    padding: 0;
+    width: 161px;
+    height: 32px;
+    background: #D1D1D1;
+    border: none;
+    color: #707070;
+    opacity: 1;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+.contact-submit input:hover{
+    border-radius: 40px;
+    color: #FCFCFC;
+    background-color: #B2B2B2;
+}
+/* form部分 */
+
+footer{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #918F89;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.footer-container{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.footer-logo{
+    margin-bottom: 41px;
+}
+
+.footer-nav{
+    width: 42%;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4px;
+}
+
+.footer-nav a{
+    color: #FFFFFF;
+}
+
+footer small{
+    color: #FFFFFF;
+    font-size: 11px;
+    letter-spacing: 0.44px;
+}

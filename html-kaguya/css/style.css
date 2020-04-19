@@ -61,7 +61,7 @@ header{
     font-size: 15px;
 }
 
-.on a{
+.active-page a{
     color: #3B3B3B;
 }
 /* ここまでヘッダー */
@@ -173,7 +173,7 @@ main{
 }
 
 .news-about-text{
-    font-size: 14px;
+    font-size: 17px;
     width: 100%;
     text-align: center;
     color: #FFFFFF;
@@ -280,7 +280,7 @@ form input::placeholder,
 textarea::placeholder{
     color: #3B3B3B;
     font-size: 12px;
-    font-family: "Noto Sans JP";
+    font-family: "Noto Sans";
 }
 
 form input{
@@ -380,11 +380,11 @@ footer{
 }
 
 .footer-nav a{
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 footer small{
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 11px;
     letter-spacing: 0.44px;
 }
