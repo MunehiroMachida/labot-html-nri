@@ -68,9 +68,8 @@ header{
     color: #3B3B3B;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:375px){
     header{
-        width: 100%;
         background-color: #918F89;
     }
     
@@ -84,8 +83,9 @@ header{
     }
     
     .header-logo img{
-        width: 40px;
-        height: 24px;
+        width: 10.6%;
+        height: 63.15%;
+        padding: 4.57%;
     }
 }
 /* ここまでヘッダー */
@@ -119,44 +119,45 @@ main{
     left: 0;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:375px){
     .fv{
+        height: 0;
+        padding-top: 213.33%;
         background: url(../img/home_top_sp.png)no-repeat;
-        background-size: 100% 100%;
-        position: relative;
+        background-size: 100% auto;
         margin-bottom: 0;
     }
     
     .fv-title{
+        background-color: transparent;
         font-size: 39px;
         font-weight: normal;
-        color: #918F89;
         text-align: left;
         padding:0;
-        width: 0;
-        position: absolute;
+        width: 100%;
         top: 185px;
-        left: 0;
     }
     .fv-title span{
-        display: block;
-        background-color: #FFFFFF;
+        background-color: rgb(255, 255, 255,0.7);
         margin-bottom: 16px;
         letter-spacing: 1;
         padding: 16px 16px 16px 54px;
         height: 48px;
         display: flex;
         align-items: flex-end;
-        opacity: 0.8;
+        opacity: 1;
     }
     .fv-title-we{
-        width: 66px;
+        min-width: 66px;
+        width: 17.6%;
     }
     .fv-title-propose{
-        width: 170px;
+        min-width: 170px;
+        width: 45.33%;
     }
     .fv-title-life{
-        width: 114px;
+        min-width: 114px;
+        width: 30.4%;
     }
 }
 /* ここまでfv */
@@ -196,10 +197,9 @@ main{
     width: 560px;
     height: 560px;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:375px){
     .contents-wrap{
         width: 90%;
-        margin: 0 auto;
     }
     
     .concept{
@@ -215,20 +215,16 @@ main{
     }
     .concept-text h2{
         font-size: 21px;
-        font-weight: normal;
         margin-bottom: 32px;
-        letter-spacing: 2.5px;
     }
     
     .concept-text p{
-        font-size: 12px;
-        line-height: 30px;
-        letter-spacing: 0.7px;
+        font-size: 14px;
     }
     
     .concept-img img{
         width: 100%;
-        height: 100%;
+        height: 80.4%;
     }
 }
 /* ここまで暮らし〜 */
@@ -286,6 +282,10 @@ main{
 }
 
 .news-more{
+    width: 115px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     text-align: center;
     color: #3B3B3B;
     font-size: 18px;
@@ -301,75 +301,37 @@ main{
     opacity: 0.3;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:375px){
     .news-container{
         width: 85%;
         margin: 0 auto 248px;
     }
     
-    .news-container h2{
-        text-align: center;
-        color: #3B3B3B;
-        font-size: 21px;
-        font-weight: normal;
-        margin-bottom: 48px;
-        letter-spacing: 2.6px;
-    }
-    
     .news-img-box{
         display: block;
-        justify-content: space-between;
-        margin-bottom: 39px;
     }
     
     .news-about{
-        position: relative;
-        z-index: 10;
-        margin-bottom: 10px;
+        margin-bottom: 24px;
     }
     
     .news-about-img img{
         width: 100%;
         height: 100%;
     }
-    
-    .news-about-shadow{
-        background-color: #000000;
-        opacity: 0.4;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        z-index: 20;
-    }
-    
+
     .news-about-text{
-        font-size: 17px;
-        width: 100%;
-        text-align: center;
-        color: #FFFFFF;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 30;
-        letter-spacing: -0.7px;
+        font-size: 15px;
     }
-    
-    .news-more{
-        text-align: center;
+
+    .news-more a{
+        opacity: 1;
         color: #3B3B3B;
-        font-size: 18px;
-        opacity: 0.7;
-        letter-spacing: 0.9px;
     }
     
     .news-more::after{
-        content: ">";
-        padding-left: 7px;
-        color: #3B3B3B;
-        font-size: 16px;
-        opacity: 0.3;
+        font-size: 8px;
+        opacity: 1;
     }
     
 }
@@ -422,54 +384,21 @@ main{
     color: #FCFCFC;
     background-color: #B2B2B2;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:375px){
     .catalog{
-        width: 85%;
+        width: 98%;
         margin: 0 auto 240px;
         text-align: center;
         color: #3B3B3B;
     }
     
-    .catalog h2{
-        font-size: 24px;
-        font-weight: normal;
-        margin-bottom: 48px;
-        letter-spacing: 2.3px;
-    }
-    
     .catalog p{
-        line-height: 2;
-        margin-bottom: 40px;
-        font-size: 15px;
-        letter-spacing: 0.45px;
+        font-size: 14px;
     }
     
     .catalog-download{
+        width: 86%;
         margin: 0 auto;
-        width: 100%;
-        height: 56px;
-        border-radius: 40px;
-        background-color: #D1D1D1;
-        position: relative;
-    }
-    
-    .catalog-download a{
-        width: 100%;
-        letter-spacing: 1.8px;
-        font-size: 18px;
-        font-weight: 100;
-        padding: 10px 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #707070;
-    }
-    
-    .catalog-download a:hover{
-        border-radius: 40px;
-        color: #FCFCFC;
-        background-color: #B2B2B2;
     }
 }
 /* ここまでカタログ */
@@ -534,67 +463,48 @@ textarea{
     background-color: #B2B2B2;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:375px){
     .contact{
-        width: 85%;
+        width: 100%;
         margin: 0 auto 240px;
     }
     
     .contact h2{
-        margin-bottom: 47px;
-        font-size: 24px;
-        font-weight: normal;
-        letter-spacing: 2.4px;
+        margin-bottom: 32px;
     }
     
     .contact-name input,
     .contact-email input,
     .contact-textarea textarea,
     .contact-submit input{
-        width: 100%;
-        margin: 0 auto 24px;
-        border-radius: 16px;
-        text-decoration: none;
-        border: 1px solid #707070;
-        opacity: 0.6;
-        letter-spacing: 0.6px;
+        width: 286px;
+        margin: 0 auto 16px;
+        border-radius: 11px;
     }
     
     form input::placeholder,
     textarea::placeholder{
-        color: #3B3B3B;
-        font-size: 12px;
-        font-family: "Noto Sans";
+        font-size: 14px;
+        text-indent: 17px;
     }
     
     form input{
-        padding: 10px 0 10px 16px;
+        padding: 11px 0 7px 0;
     }
     
     textarea{
-        height: 200px;
-        padding: 10px 0 10px 16px;
-        resize: none;
+        height: 160px;
+        padding: 10px 0 10px 0;
     }
     
     .contact-submit input{
         padding: 0;
-        width: 161px;
-        height: 32px;
-        background: #D1D1D1;
-        border: none;
-        color: #707070;
-        opacity: 1;
-        font-size: 14px;
+        width: 173px;
+        height: 48px;
+        font-size: 18px;
         letter-spacing: 1.4px;
+        border-radius: 30px;
     }
-    
-    .contact-submit input:hover{
-        border-radius: 40px;
-        color: #FCFCFC;
-        background-color: #B2B2B2;
-    }
-    
 }
 /* form部分 */
 
@@ -634,42 +544,26 @@ textarea{
     font-size: 16px;
     opacity: 0.3;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:375px){
     .recruit{
-        text-align: center;
-        padding-bottom: 320px;
+        padding-bottom: 240px;
     }
     
     .recruit h2{
-        font-size: 24px;
-        color: #3B3B3B;
-        font-weight: normal;
-        margin-bottom: 48px;
-        letter-spacing: 2.4px;
-    }
-    
-    .recruit p{
-        font-size: 15px;
-        line-height: 2;
-        color: #3B3B3B;
-        letter-spacing: 0.45px;
         margin-bottom: 32px;
     }
     
-    .recruit-more{
-        text-align: center;
+    .recruit p{
+        margin-bottom: 24px;
+    }
+
+    .recruit-more a{
+        opacity: 1;
         color: #3B3B3B;
-        font-size: 18px;
-        opacity: 0.7;
-        letter-spacing: 0.9px;
     }
     
     .recruit-more::after{
-        content: ">";
-        padding-left: 7px;
-        color: #3B3B3B;
-        font-size: 16px;
-        opacity: 0.3;
+        opacity: 1;
     }
 }
 /* ここまでRECRUIT */
@@ -715,13 +609,8 @@ footer small{
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:375px){
     footer{
-        width: 100%;
-        max-width: 1280px;
-        margin: 0 auto;
-        background-color: #918F89;
-        text-align: center;
         padding-bottom: 24px;
     }
     
@@ -730,11 +619,16 @@ footer small{
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        padding-top: 120px;
+        padding-top: 72px;
+        margin-bottom: 82px;
     }
     
     .footer-logo{
-        margin: 0 auto 41px;
+        margin: 0 auto;
+    }
+
+    .footer-logo img{
+        width: 52px;
     }
     
     .footer-nav{
@@ -751,7 +645,7 @@ footer small{
     
     footer small{
         color: #FFFFFF;
-        font-size: 11px;
+        font-size: 10px;
         letter-spacing: 0.44px;
     }
     .pc-size{
