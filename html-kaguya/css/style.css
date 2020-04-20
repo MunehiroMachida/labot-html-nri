@@ -634,6 +634,44 @@ textarea{
     font-size: 16px;
     opacity: 0.3;
 }
+@media screen and (max-width:768px){
+    .recruit{
+        text-align: center;
+        padding-bottom: 320px;
+    }
+    
+    .recruit h2{
+        font-size: 24px;
+        color: #3B3B3B;
+        font-weight: normal;
+        margin-bottom: 48px;
+        letter-spacing: 2.4px;
+    }
+    
+    .recruit p{
+        font-size: 15px;
+        line-height: 2;
+        color: #3B3B3B;
+        letter-spacing: 0.45px;
+        margin-bottom: 32px;
+    }
+    
+    .recruit-more{
+        text-align: center;
+        color: #3B3B3B;
+        font-size: 18px;
+        opacity: 0.7;
+        letter-spacing: 0.9px;
+    }
+    
+    .recruit-more::after{
+        content: ">";
+        padding-left: 7px;
+        color: #3B3B3B;
+        font-size: 16px;
+        opacity: 0.3;
+    }
+}
 /* ここまでRECRUIT */
 
 footer{
