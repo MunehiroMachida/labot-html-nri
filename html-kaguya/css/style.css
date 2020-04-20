@@ -533,6 +533,69 @@ textarea{
     color: #FCFCFC;
     background-color: #B2B2B2;
 }
+
+@media screen and (max-width:768px){
+    .contact{
+        width: 85%;
+        margin: 0 auto 240px;
+    }
+    
+    .contact h2{
+        margin-bottom: 47px;
+        font-size: 24px;
+        font-weight: normal;
+        letter-spacing: 2.4px;
+    }
+    
+    .contact-name input,
+    .contact-email input,
+    .contact-textarea textarea,
+    .contact-submit input{
+        width: 100%;
+        margin: 0 auto 24px;
+        border-radius: 16px;
+        text-decoration: none;
+        border: 1px solid #707070;
+        opacity: 0.6;
+        letter-spacing: 0.6px;
+    }
+    
+    form input::placeholder,
+    textarea::placeholder{
+        color: #3B3B3B;
+        font-size: 12px;
+        font-family: "Noto Sans";
+    }
+    
+    form input{
+        padding: 10px 0 10px 16px;
+    }
+    
+    textarea{
+        height: 200px;
+        padding: 10px 0 10px 16px;
+        resize: none;
+    }
+    
+    .contact-submit input{
+        padding: 0;
+        width: 161px;
+        height: 32px;
+        background: #D1D1D1;
+        border: none;
+        color: #707070;
+        opacity: 1;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+    }
+    
+    .contact-submit input:hover{
+        border-radius: 40px;
+        color: #FCFCFC;
+        background-color: #B2B2B2;
+    }
+    
+}
 /* form部分 */
 
 .recruit{
