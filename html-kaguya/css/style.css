@@ -20,9 +20,6 @@ body,p,ol,ul,li,a,h1,h2,h3,small,table,td,th,tr{
     margin: 0;
     padding: 0;
 }
-.sp-size{
-    display: none;
-}
 /* ===== ここまでリセットCSS ===== */
 header{
     width: 100%;
@@ -281,10 +278,6 @@ main{
 }
 
 .news-more{
-    width: 115px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
     text-align: center;
     color: #3B3B3B;
     font-size: 18px;
@@ -321,6 +314,11 @@ main{
 
     .news-about-text{
         font-size: 15px;
+    }
+
+    .news-more{
+        width: 115px;
+        margin: 0 auto;
     }
 
     .news-more a{
@@ -606,7 +604,9 @@ footer small{
     letter-spacing: 0.44px;
 }
 
-
+.sp-size{
+    display: none;
+}
 
 @media screen and (max-width:375px){
     footer{
