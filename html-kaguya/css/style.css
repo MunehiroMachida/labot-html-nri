@@ -317,11 +317,11 @@ main{
     }
 
     .news-more{
-        width: 55%;
         margin: 0 auto;
     }
 
     .news-more a{
+        width: 55%;
         opacity: 1;
         color: #3B3B3B;
     }
@@ -557,6 +557,8 @@ textarea{
     .recruit-more a{
         opacity: 1;
         color: #3B3B3B;
+        width: 55%;
+        background-color: aqua;
     }
     
     .recruit-more::after{
