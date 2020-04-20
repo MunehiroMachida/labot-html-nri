@@ -422,6 +422,56 @@ main{
     color: #FCFCFC;
     background-color: #B2B2B2;
 }
+@media screen and (max-width:768px){
+    .catalog{
+        width: 85%;
+        margin: 0 auto 240px;
+        text-align: center;
+        color: #3B3B3B;
+    }
+    
+    .catalog h2{
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 48px;
+        letter-spacing: 2.3px;
+    }
+    
+    .catalog p{
+        line-height: 2;
+        margin-bottom: 40px;
+        font-size: 15px;
+        letter-spacing: 0.45px;
+    }
+    
+    .catalog-download{
+        margin: 0 auto;
+        width: 100%;
+        height: 56px;
+        border-radius: 40px;
+        background-color: #D1D1D1;
+        position: relative;
+    }
+    
+    .catalog-download a{
+        width: 100%;
+        letter-spacing: 1.8px;
+        font-size: 18px;
+        font-weight: 100;
+        padding: 10px 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #707070;
+    }
+    
+    .catalog-download a:hover{
+        border-radius: 40px;
+        color: #FCFCFC;
+        background-color: #B2B2B2;
+    }
+}
 /* ここまでカタログ */
 
 .contact{
