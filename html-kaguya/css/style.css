@@ -73,6 +73,7 @@ header{
     .header-container{
         width: 100%;
         display: block;
+        max-width: 375px;
     }
 
     .header-logo{
