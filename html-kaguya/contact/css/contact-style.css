@@ -213,3 +213,111 @@ footer small{
     font-size: 11px;
     letter-spacing: 0.44px;
 }
+
+@media screen and (max-width:375px){
+    header{
+        background-color: #918F89;
+    }
+
+    
+    .header-container{
+        width: 100%;
+        display: block;
+    }
+
+    .header-logo{
+        text-align: center;
+    }
+
+    
+    .header-logo img{
+        width: 10.6%;
+        height: 63.15%;
+        padding: 4.57%;
+    }
+
+    .fv{
+        height: 0;
+        padding-top: 213.33%;
+        background: url(../../img/contact_top_sp.png)no-repeat;
+        margin-bottom: 0;
+    }
+
+    
+    .sub-page-title{
+        font-size: 25px;
+        width: 100%;
+        top: 256px;
+        left: 0;
+        text-align: center;
+    }
+
+    .contents-wrap{
+        width: 80%;
+        padding-bottom: 240px;
+    }
+    
+    .contact-name input,
+    .contact-email input,
+    .contact-textarea textarea,
+    .contact-submit input{
+        width: 96%;
+        border-radius: 11px;
+    }
+
+    .contact-submit input{
+        width: 173px;
+        height: 48px;
+        font-size: 18px;
+        border-radius: 30px;
+        margin-bottom: 0;
+        font-family: "Noto sans";
+    }
+
+/* form部分 */
+    
+    footer{
+        padding-bottom: 24px;
+    }
+
+    .footer-container{
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 72px;
+        margin-bottom: 82px;
+    }
+
+    .footer-logo{
+        margin: 0 auto;
+    }
+
+    .footer-logo img{
+        width: 52px;
+    }
+
+    .footer-nav{
+        width: 42%;
+    }
+
+    .footer-nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-nav a{
+        color: #FFFFFF;
+    }
+    footer small{
+        color: #FFFFFF;
+        font-size: 10px;
+        letter-spacing: 0.44px;
+    }
+    .pc-size{
+        display: none;
+    }
+    .sp-size{
+        display: block;
+    }
+
+}
