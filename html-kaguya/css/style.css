@@ -64,6 +64,27 @@ header{
 .active-page a{
     color: #3B3B3B;
 }
+
+@media screen and (max-width:375px){
+    header{
+        background-color: #918F89;
+    }
+    
+    .header-container{
+        width: 100%;
+        display: block;
+    }
+
+    .header-logo{
+        text-align: center;
+    }
+    
+    .header-logo img{
+        width: 10.6%;
+        height: 63.15%;
+        padding: 4.57%;
+    }
+}
 /* ここまでヘッダー */
 
 main{
@@ -93,6 +114,47 @@ main{
     position: absolute;
     top: 274px;
     left: 0;
+}
+
+@media screen and (max-width:375px){
+    .fv{
+        height: 0;
+        padding-top: 213.33%;
+        background: url(../img/home_top_sp.png)no-repeat;
+        background-size: 100% auto;
+        margin-bottom: 0;
+    }
+    
+    .fv-title{
+        background-color: transparent;
+        font-size: 39px;
+        font-weight: normal;
+        text-align: left;
+        padding:0;
+        width: 100%;
+        top: 185px;
+    }
+    .fv-title span{
+        background-color: rgb(255, 255, 255,0.7);
+        margin-bottom: 16px;
+        padding: 16px 16px 16px 54px;
+        height: 48px;
+        display: flex;
+        align-items: flex-end;
+        opacity: 1;
+    }
+    .fv-title-we{
+        min-width: 66px;
+        width: 17.6%;
+    }
+    .fv-title-propose{
+        min-width: 170px;
+        width: 45.33%;
+    }
+    .fv-title-life{
+        min-width: 114px;
+        width: 30.4%;
+    }
 }
 /* ここまでfv */
 
@@ -130,6 +192,36 @@ main{
 .concept-img img{
     width: 560px;
     height: 560px;
+}
+@media screen and (max-width:375px){
+    .contents-wrap{
+        width: 90%;
+    }
+    
+    .concept{
+        display: block;
+        color: #3B3B3B;
+        margin-bottom: 240px;
+    }
+    
+    .concept-text{
+        margin:88px 0 24px;
+        padding-right: 0;
+        text-align: center;
+    }
+    .concept-text h2{
+        font-size: 21px;
+        margin-bottom: 32px;
+    }
+    
+    .concept-text p{
+        font-size: 14px;
+    }
+    
+    .concept-img img{
+        width: 100%;
+        height: 80.4%;
+    }
 }
 /* ここまで暮らし〜 */
 
@@ -200,6 +292,46 @@ main{
     font-size: 16px;
     opacity: 0.3;
 }
+
+@media screen and (max-width:375px){
+    .news-container{
+        width: 85%;
+        margin: 0 auto 248px;
+    }
+    
+    .news-img-box{
+        display: block;
+    }
+    
+    .news-about{
+        margin-bottom: 24px;
+    }
+    
+    .news-about-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .news-about-text{
+        font-size: 15px;
+    }
+
+    .news-more{
+        margin: 0 auto;
+    }
+
+    .news-more a{
+        width: 55%;
+        opacity: 1;
+        color: #3B3B3B;
+    }
+    
+    .news-more::after{
+        font-size: 8px;
+        opacity: 1;
+    }
+    
+}
 /* ここまでNEWS */
 
 .catalog{
@@ -248,6 +380,23 @@ main{
     border-radius: 40px;
     color: #FCFCFC;
     background-color: #B2B2B2;
+}
+@media screen and (max-width:375px){
+    .catalog{
+        width: 98%;
+        margin: 0 auto 240px;
+        text-align: center;
+        color: #3B3B3B;
+    }
+    
+    .catalog p{
+        font-size: 14px;
+    }
+    
+    .catalog-download{
+        width: 86%;
+        margin: 0 auto;
+    }
 }
 /* ここまでカタログ */
 
@@ -310,6 +459,50 @@ textarea{
     color: #FCFCFC;
     background-color: #B2B2B2;
 }
+
+@media screen and (max-width:375px){
+    .contact{
+        width: 100%;
+        margin: 0 auto 240px;
+    }
+    
+    .contact h2{
+        margin-bottom: 32px;
+    }
+    
+    .contact-name input,
+    .contact-email input,
+    .contact-textarea textarea,
+    .contact-submit input{
+        width: 286px;
+        margin: 0 auto 16px;
+        border-radius: 11px;
+    }
+    
+    form input::placeholder,
+    textarea::placeholder{
+        font-size: 14px;
+        text-indent: 17px;
+    }
+    
+    form input{
+        padding: 11px 0 7px 0;
+    }
+    
+    textarea{
+        height: 160px;
+        padding: 10px 0 10px 0;
+    }
+    
+    .contact-submit input{
+        padding: 0;
+        width: 173px;
+        height: 48px;
+        font-size: 18px;
+        letter-spacing: 1.4px;
+        border-radius: 30px;
+    }
+}
 /* form部分 */
 
 .recruit{
@@ -347,6 +540,29 @@ textarea{
     color: #3B3B3B;
     font-size: 16px;
     opacity: 0.3;
+}
+@media screen and (max-width:375px){
+    .recruit{
+        padding-bottom: 240px;
+    }
+    
+    .recruit h2{
+        margin-bottom: 32px;
+    }
+    
+    .recruit p{
+        margin-bottom: 24px;
+    }
+
+    .recruit-more a{
+        opacity: 1;
+        color: #3B3B3B;
+        width: 55%;
+    }
+    
+    .recruit-more::after{
+        opacity: 1;
+    }
 }
 /* ここまでRECRUIT */
 
@@ -387,4 +603,55 @@ footer small{
     color: #FFFFFF;
     font-size: 11px;
     letter-spacing: 0.44px;
+}
+
+.sp-size{
+    display: none;
+}
+
+@media screen and (max-width:375px){
+    footer{
+        padding-bottom: 24px;
+    }
+    
+    .footer-container{
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 72px;
+        margin-bottom: 82px;
+    }
+    
+    .footer-logo{
+        margin: 0 auto;
+    }
+
+    .footer-logo img{
+        width: 52px;
+    }
+    
+    .footer-nav{
+        width: 42%;
+    }
+    .footer-nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer-nav a{
+        color: #FFFFFF;
+    }
+    
+    footer small{
+        color: #FFFFFF;
+        font-size: 10px;
+        letter-spacing: 0.44px;
+    }
+    .pc-size{
+        display: none;
+    }
+    .sp-size{
+        display: block;
+    }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <title>HTML/CSS-家具屋</title>
 </head>
+
 <body>
-    <header>
+    <header class="pc-size">
         <div class="header-container">
             <p class="header-logo"><img src="./img/logo_header.png" srcset="./img/logo_header.png 1x,img/logo_header@2x.png 2x" alt="HTML/CSS"></p>
             <nav class="header-nav">
@@ -21,13 +23,29 @@
             </nav>
         </div>
     </header>
+    <!-- sp -->
+    <header class="sp-size">
+        <div class="header-container">
+            <p class="header-logo"><img src="./img/logo_footer.png" srcset="./img/logo_footer.png 1x,img/logo_footer@2x.png 2x" alt="HTML/CSS"></p>
+        </div>
+    </header>
+    <!-- sp -->
     <main>
-        <section class="fv">
+        <section class="fv pc-size">
             <h1 class="fv-title">We propose a life.</h1>
             <!-- <p class="fv-img"><img src="./img/home_top.png" srcset="img/home_top.png 1x,img/home_top@2x.png 2x" alt="メイン"></p>背景として使用する -->
         </section>
+        <!-- sp -->
+        <section class="fv sp-size">
+            <h1 class="fv-title">
+                <span class="fv-title-we">We</span>
+                <span class="fv-title-propose">propose</span>
+                <span class="fv-title-life">a life.</span>
+            </h1>
+            <!-- sp -->
+        </section>
         <div class="contents-wrap">
-            <div class="concept">
+            <div class="concept pc-size">
                 <section class="concept-text">
                     <h2>暮らしを提案する。</h2>
                     <p>私たちは、家具を売るのではなく、お客様の理想とする<br>
@@ -38,6 +56,21 @@
                 </section>
                 <p class="concept-img"><img src="./img/concept.png" srcset="img/concept.png 1x,img/concept@2x.png 2x" alt="暮らし"></p>
             </div>
+            <!-- sp -->
+            <div class="concept sp-size">
+                <section class="concept-text">
+                    <h2>暮らしを提案する。</h2>
+                    <p>私たちは、家具を売るのではなく、<br>
+                        お客様の理想とする<br>
+                        「暮らし」を提案します。</p>
+                    <p>仕事で疲れた後に帰りたくなる、<br>
+                        今日も１日頑張ろうと思える、<br>
+                        そんな空間をお客様と一緒に作り上げていくのが<br>
+                        私たちの仕事です。</p>
+                </section>
+                <p class="concept-img"><img src="./img/concept.png" srcset="img/concept.png 1x,img/concept@2x.png 2x" alt="暮らし"></p>
+            </div>
+            <!-- sp -->
             <section class="news-container">
                 <h2>NEWS</h2>
                 <div class="news-img-box">
@@ -71,7 +104,10 @@
                     <p class="contact-name"><input type="text" name="name" placeholder="お名前"></p>
                     <p class="contact-email"><input type="email" name="email" placeholder="メールアドレス"></p>
                     <p class="contact-textarea"><textarea name="contact" placeholder="お問い合わせ内容"></textarea></p>
-                    <p class="contact-submit"><input type="submit" value="SEND"></p>
+                    <p class="contact-submit pc-size"><input type="submit" value="SEND"></p>
+<!-- sp -->
+                    <p class="contact-submit sp-size"><input type="submit" value="Send"></p>
+                    <!-- sp -->
                 </form>
             </section>
             <section class="recruit">
@@ -85,7 +121,7 @@
     <footer>
         <div class="footer-container">
             <p class="footer-logo"><img src="./img/logo_footer.png" srcset="img/logo_footer.png 1x,img/logo_footer@2x.png 2x" alt="HTML/CSS"></p>
-            <nav class="footer-nav">
+            <nav class="footer-nav pc-size">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="./news/news.html">NEWS</a></li>
@@ -97,4 +133,5 @@
         <p><small>&copy;HTMLCSS.code</small></p>
     </footer>
 </body>
+
 </html>
