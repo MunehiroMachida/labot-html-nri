@@ -217,6 +217,8 @@ footer small{
 @media screen and (max-width:375px){
     header{
         background-color: #918F89;
+        position: fixed;
+        z-index: 100;
     }
 
     
@@ -237,10 +239,9 @@ footer small{
     }
 
     .fv{
-        height: 0;
-        padding-top: 213.33%;
+        height: 704px;
         background: url(../../img/contact_top_sp.png)no-repeat;
-        margin-bottom: 0;
+        margin-bottom: 160px;
     }
 
     
