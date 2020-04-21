@@ -16,10 +16,12 @@ a:hover{
 ol,ul,li{
     list-style: none;
 }
+
 body,p,ol,ul,li,a,h1,h2,h3,small,table,td,th,tr{
     margin: 0;
     padding: 0;
 }
+
 /* ===== ここまでリセットCSS ===== */
 header{
     width: 100%;
@@ -45,6 +47,7 @@ header{
 .header-nav{
     padding-top: 15px;
 }
+
 .header-nav ul{
     display: flex;
 }
@@ -64,8 +67,8 @@ header{
 .active-page a{
     color: #3B3B3B;
 }
-/* ここまでヘッダー */
 
+/* ここまでヘッダー */
 main{
     max-width: 1280px;
     margin: 0 auto;
@@ -92,8 +95,8 @@ main{
 .news-title{
     color: #918F89;
 }
-/* ここまでfv */
 
+/* ここまでfv */
 .contents-wrap{
     width: 85%;
     margin: 0 auto;
@@ -147,8 +150,8 @@ main{
     z-index: 30;
     letter-spacing: -0.7px;
 }
-/* ここまでNEWS */
 
+/* ここまでNEWS */
 footer{
     width: 100%;
     max-width: 1280px;
@@ -173,6 +176,7 @@ footer{
 .footer-nav{
     width: 42%;
 }
+
 .footer-nav ul{
     display: flex;
     justify-content: space-between;
@@ -187,4 +191,150 @@ footer small{
     color: #FFFFFF;
     font-size: 11px;
     letter-spacing: 0.44px;
+}
+
+.sp-size{
+    display: none;
+}
+
+@media screen and (max-width:375px){
+    header{
+        background-color: #918F89;
+    }
+
+    
+    .header-container{
+        width: 100%;
+        display: block;
+    }
+
+    .header-logo{
+        text-align: center;
+    }
+
+    
+    .header-logo img{
+        width: 10.6%;
+        height: 63.15%;
+        padding: 4.57%;
+    }
+
+    .fv{
+        height: 0;
+        padding-top: 213.33%;
+        background: url(../../img/news_top_sp.png)no-repeat;
+        margin-bottom: 0;
+    }
+
+    
+    .sub-page-title{
+        color: #3B3B3B;
+        font-size: 25px;
+        text-align: left;
+        width: 100%;
+        top: 256px;
+        left: 0;
+        text-align: center;
+    }
+
+    .contents-wrap{
+        width: 90%;
+        padding-bottom: 256px;
+    }
+
+    .news-container{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    
+    .news-img-box{
+        display: block;
+    }
+
+    
+    .news-about{
+        margin-bottom: 24px;
+    }
+
+    
+    .news-about-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .news-about-text{
+        font-size: 15px;
+    }
+
+    .news-more{
+        margin: 0 auto;
+    }
+
+    .news-more a{
+        width: 55%;
+        opacity: 1;
+        color: #3B3B3B;
+    }
+
+    
+    .news-more::after{
+        font-size: 8px;
+        opacity: 1;
+    }
+
+    
+    footer{
+        padding-bottom: 24px;
+    }
+
+    
+    .footer-container{
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 72px;
+        margin-bottom: 82px;
+    }
+
+    
+    .footer-logo{
+        margin: 0 auto;
+    }
+
+    .footer-logo img{
+        width: 52px;
+    }
+
+    
+    .footer-nav{
+        width: 42%;
+    }
+
+    .footer-nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+    .footer-nav a{
+        color: #FFFFFF;
+    }
+
+    
+    footer small{
+        color: #FFFFFF;
+        font-size: 10px;
+        letter-spacing: 0.44px;
+    }
+
+    .pc-size{
+        display: none;
+    }
+
+    .sp-size{
+        display: block;
+    }
+
 }
