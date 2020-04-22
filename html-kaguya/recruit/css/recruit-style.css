@@ -246,3 +246,124 @@ footer small{
     font-size: 11px;
     letter-spacing: 0.44px;
 }
+
+@media screen and (max-width:375px){
+    header{
+        background-color: #918F89;
+        position: fixed;
+        z-index: 100;
+    }
+
+    
+    .header-container{
+        width: 100%;
+        display: block;
+        max-width: 375px;
+    }
+
+    .header-logo{
+        text-align: center;
+    }
+
+    
+    .header-logo img{
+        width: 10.6%;
+        height: 63.15%;
+        padding: 4.57%;
+    }
+
+    .fv{
+        height: 704px;
+        background-color: aqua;
+        background: url(../../img/recruit_top_sp.png)no-repeat;
+        margin-bottom: 160px;
+    }
+
+    
+    .sub-page-title{
+        color: #3B3B3B;
+        font-size: 25px;
+        width: 100%;
+        top: 256px;
+        left: 0;
+        text-align: center;
+    }
+
+    .contents-wrap{
+        width: 95%;
+        padding-bottom: 256px;
+    }
+
+    .recruit-info-table{
+        width: 344px;
+        font-size: 15px;
+    }
+    
+    .recruit-info-table th{
+        width: 73px;
+    }
+    
+    .recruit-info-table ul{
+        margin-left: 23px;
+    }
+    
+    .recruit-info-table li{
+        font-size: 13px;
+        margin-bottom: 9px;
+    }
+
+    /* 販売員部分 */
+    .salesperson-job-category{
+        padding: 16px 0 13px 23px;
+    }
+    
+    /* 家具職人部分 */
+    .furniture-maker-category{
+        padding: 15px 0 12px 23px;
+    }
+    
+    footer{
+        padding-bottom: 24px;
+    }
+
+    .footer-container{
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 72px;
+        margin-bottom: 82px;
+    }
+
+    .footer-logo{
+        margin: 0 auto;
+    }
+
+    .footer-logo img{
+        width: 52px;
+    }
+
+    .footer-nav{
+        width: 42%;
+    }
+
+    .footer-nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-nav a{
+        color: #FFFFFF;
+    }
+    footer small{
+        color: #FFFFFF;
+        font-size: 10px;
+        letter-spacing: 0.44px;
+    }
+    .pc-size{
+        display: none;
+    }
+    .sp-size{
+        display: block;
+    }
+
+}
