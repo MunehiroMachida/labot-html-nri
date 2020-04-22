@@ -138,21 +138,20 @@ textarea::placeholder{
     color: #3B3B3B;
     font-size: 12px;
     font-family: "Noto Sans";
-    padding-left: 16px;
-}
-
-form input{
-    padding: 10px 0 9px 4px;
 }
 
 .contact-textarea{
     margin-bottom: 15px;
 }
 
+form input{
+    padding: 10px 0 10px 16px;
+}
+
 textarea{
     height: 196px;
-    padding: 6px 0 0 8px;
     resize: none;
+    padding: 10px 0 10px 16px;
 }
 
 .contact-submit input{
@@ -276,6 +275,11 @@ footer small{
         font-family: "Noto sans";
     }
 
+    form input::placeholder,
+    textarea::placeholder{
+        font-size: 14px;
+        padding-left: 0;
+    }
 /* form部分 */
     
     footer{

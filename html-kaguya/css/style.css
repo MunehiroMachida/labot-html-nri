@@ -483,16 +483,10 @@ textarea{
     form input::placeholder,
     textarea::placeholder{
         font-size: 14px;
-        text-indent: 17px;
     }
-    
-    form input{
-        padding: 11px 0 7px 0;
-    }
-    
+
     textarea{
         height: 160px;
-        padding: 10px 0 10px 0;
     }
     
     .contact-submit input{
