@@ -262,7 +262,7 @@ footer small{
     .contact-email input,
     .contact-textarea textarea,
     .contact-submit input{
-        width: 96%;
+        width: 94%;
         border-radius: 11px;
     }
 
