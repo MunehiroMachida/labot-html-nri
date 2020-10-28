@@ -68,12 +68,15 @@ header{
 @media screen and (max-width:375px){
     header{
         background-color: #918F89;
+        position: relative;
+        z-index: 50;
     }
     
     .header-container{
         width: 100%;
-        display: block;
         max-width: 375px;
+        display: flex;
+        padding:15px 0;
     }
 
     .header-logo{
@@ -81,9 +84,75 @@ header{
     }
     
     .header-logo img{
-        width: 10.6%;
-        height: 63.15%;
-        padding: 4.57%;
+        height: auto;
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* ハンバーガーパクリ
+    http://webcreatornote.blogspot.com/2018/06/css_29.html */
+    .sp-hamburger,
+    .sp-hamburger span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }
+    .sp-hamburger {
+        width: 33px;
+        height: 23px;
+        position: relative;
+        margin-right: 5px;
+    }
+    .sp-hamburger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .sp-hamburger span:nth-of-type(1) {
+        top: 0;
+    }
+    .sp-hamburger span:nth-of-type(2) {
+        top: 10px;
+    }
+    .sp-hamburger span:nth-of-type(3) {
+        bottom: 0;
+    }
+    /*click後のスタイル*/
+    .sp-hamburger.active span:nth-of-type(1) {
+        -webkit-transform: translateY(20px) rotate(-45deg);
+        transform: translateY(10px) rotate(-45deg);
+    }
+    .sp-hamburger.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    .sp-hamburger.active span:nth-of-type(3) {
+        -webkit-transform: translateY(-20px) rotate(45deg);
+        transform: translateY(-10px) rotate(45deg);
+    }
+    .sp-header-menu{
+        position: absolute;
+        z-index: 40;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color:#918F89;
+        opacity: 0.9;
+        display: none;
+    }
+    .sp-header-menu li{
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: solid 1px rgb(255, 255, 255,0.3);
+        
+    }
+
+    .sp-header-menu a{
+        color: #FCFCFC;
+        opacity: none;
     }
 }
 /* ここまでヘッダー */
@@ -648,69 +717,6 @@ footer small{
     }
     .sp-size{
         display: block;
-    }
-
-
-    .header-container{
-        width: 95%;
-        display: flex;
-        position: relative;
-        padding:15px 0;
-    }
-    
-    .header-logo img{
-        height: auto;
-        padding: 0;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .sp-header-menu{
-        display: none;
-    }
-
-/* ハンバーガーパクリ
-http://webcreatornote.blogspot.com/2018/06/css_29.html */
-    .sp-hamburger,
-    .sp-hamburger span {
-        display: inline-block;
-        transition: all .4s;
-        box-sizing: border-box;
-    }
-    .sp-hamburger {
-        width: 33px;
-        height: 23px;
-        position: relative;
-    }
-    .sp-hamburger span {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        background-color: #fff;
-        border-radius: 4px;
-    }
-    .sp-hamburger span:nth-of-type(1) {
-        top: 0;
-    }
-    .sp-hamburger span:nth-of-type(2) {
-        top: 10px;
-    }
-    .sp-hamburger span:nth-of-type(3) {
-        bottom: 0;
-    }
-    /*click後のスタイル*/
-    .sp-hamburger.active span:nth-of-type(1) {
-        -webkit-transform: translateY(20px) rotate(-45deg);
-        transform: translateY(10px) rotate(-45deg);
-    }
-    .sp-hamburger.active span:nth-of-type(2) {
-        opacity: 0;
-    }
-    .sp-hamburger.active span:nth-of-type(3) {
-        -webkit-transform: translateY(-20px) rotate(45deg);
-        transform: translateY(-10px) rotate(45deg);
     }
 }
 

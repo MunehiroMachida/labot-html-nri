@@ -5,9 +5,14 @@ body.animate({
 }, 1500)
 
 // ハンバーガーをクリックした時の処理
-$(function () {
-    $('.sp-hamburger').on('click', function () {
-        $(this).toggleClass('active');
-        return false;
-    });
+
+$('.sp-hamburger').on('click', () => {
+    // ここがハンバーガーの線の部分
+    $(event.currentTarget).toggleClass('active');
+    // ここからプルダウンメニュー
+    if ($('.sp-header-menu').css('display') === 'none') {
+        $('.sp-header-menu').slideDown();
+    } else {
+        $('.sp-header-menu').slideUp();
+    }
 });
