@@ -16,3 +16,30 @@ $('.sp-hamburger').on('click', () => {
         $('.sp-header-menu').slideUp();
     }
 });
+
+const sofaShadow = $(() => {
+    $('.item-sofa').on('mouseenter', () => {
+        $('.item-sofa').children('.news-about-shadow').slideDown();
+    });
+    $('.item-sofa').on('mouseleave', () => {
+        $('.item-sofa').children('.news-about-shadow').slideUp();
+    });
+});
+
+const chairShadow = $(() => {
+    $('.item-chair').on('mouseenter', () => {
+        $('.item-chair').children('.news-about-shadow').slideDown();
+    });
+    $('.item-chair').on('mouseleave', () => {
+        $('.item-chair').children('.news-about-shadow').slideUp();
+    });
+});
+
+const tableShadow = $(() => {
+    $('.item-table').on('mouseenter', () => {
+        $('.item-table').children('.news-about-shadow').slideDown();
+    });
+    $('.item-table').on('mouseleave', () => {
+        $('.item-table').children('.news-about-shadow').slideUp();
+    });
+});
