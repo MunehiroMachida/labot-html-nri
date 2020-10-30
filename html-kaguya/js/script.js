@@ -17,6 +17,7 @@ $('.sp-hamburger').on('click', () => {
     }
 });
 
+// ソファー、チェア、机のスライドアップ
 const sofaShadow = $(() => {
     $('.item-sofa').on('mouseenter', () => {
         $('.item-sofa').children('.news-about-shadow').slideDown();
@@ -43,3 +44,14 @@ const tableShadow = $(() => {
         $('.item-table').children('.news-about-shadow').slideUp();
     });
 });
+
+// ボタンを押すとアニメーションが発火
+const target = document.querySelector('.contact-submit');
+$('.contact-submit').on('click', () => {
+    target.className = "btn-completed";
+    target.children[0].textContent = 'TRANSMISSION COMPLETED';
+});
+
+
+
+

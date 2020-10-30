@@ -512,22 +512,56 @@ textarea{
     resize: none;
 }
 
-.contact-submit input{
+.contact-submit {
+    margin: 0 auto;
     padding: 0;
     width: 161px;
     height: 32px;
     background: #D1D1D1;
+    border-radius: 16px;
     border: none;
     color: #707070;
     opacity: 1;
     font-size: 14px;
     letter-spacing: 1.4px;
+    position: relative;
 }
 
-.contact-submit input:hover{
+.contact-submit:hover{
     border-radius: 40px;
     color: #FCFCFC;
     background-color: #B2B2B2;
+}
+
+.contact-submit span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-completed{
+    background: #D1D1D1;
+    border-radius: 16px;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 290px;
+    height: 32px;
+    transition: all 0.5s ease;
+    transform: scale(1,1);
+    padding: 0 30px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+.btn-completed span{
+    display: block;
+    content: "TRANSMISSION COMPLETED";
+    width: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width:375px){
