@@ -246,7 +246,9 @@ footer small{
     font-size: 11px;
     letter-spacing: 0.44px;
 }
-
+.sp-size{
+    display: none;
+}
 @media screen and (max-width:375px){
     header{
         background-color: #918F89;
