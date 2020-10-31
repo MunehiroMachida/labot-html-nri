@@ -592,13 +592,53 @@ textarea{
         height: 160px;
     }
     
-    .contact-submit input{
-        padding: 0;
-        width: 173px;
-        height: 48px;
-        font-size: 18px;
+    .sp-contact-submit {
+        margin: 0 auto;
+        width: 141px;
+        height: 32px;
+        background: #D1D1D1;
+        border-radius: 16px;
+        border: none;
+        color: #707070;
+        opacity: 1;
+        font-size: 14px;
         letter-spacing: 1.4px;
-        border-radius: 30px;
+        position: relative;
+    }
+
+    .sp-contact-submit:hover{
+        border-radius: 40px;
+        color: #FCFCFC;
+        background-color: #B2B2B2;
+    }
+
+    .sp-contact-submit span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sp-btn-completed{
+        background: #D1D1D1;
+        border-radius: 16px;
+        margin: 0 auto;
+        width: 270px;
+        height: 32px;
+        transition: all 0.5s ease;
+        transform: scale(1,1);
+        font-size: 12px;
+        letter-spacing: 1.4px;
+    }
+
+    .sp-btn-completed span{
+        display: block;
+        content: "TRANSMISSION COMPLETED";
+        width: 240px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 /* form部分 */

@@ -46,12 +46,15 @@ const tableShadow = $(() => {
 });
 
 // ボタンを押すとアニメーションが発火
+// PC
 const target = document.querySelector('.contact-submit');
-$('.contact-submit').on('click', () => {
+$(target).on('click', () => {
     target.className = "btn-completed";
     target.children[0].textContent = 'TRANSMISSION COMPLETED';
 });
-
-
-
-
+// SP
+const spTarget = document.querySelector('.sp-contact-submit');
+$(spTarget).on('click', () => {
+    spTarget.className = "sp-btn-completed";
+    spTarget.children[0].textContent = 'TRANSMISSION COMPLETED';
+});
