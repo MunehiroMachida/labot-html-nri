@@ -154,23 +154,64 @@ textarea{
     padding: 10px 0 10px 16px;
 }
 
-.contact-submit input{
-    padding: 0;
-    width: 161px;
-    height: 32px;
-    background: #D1D1D1;
-    border: none;
-    color: #707070;
-    opacity: 1;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-}
-
 .contact-submit input:hover{
     border-radius: 40px;
     color: #FCFCFC;
     background-color: #B2B2B2;
 }
+
+.contact-submit {
+    margin: 0 auto;
+    padding: 0;
+    width: 161px;
+    height: 32px;
+    background: #D1D1D1;
+    border-radius: 16px;
+    border: none;
+    color: #707070;
+    opacity: 1;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    position: relative;
+}
+
+.contact-submit:hover{
+    border-radius: 40px;
+    color: #FCFCFC;
+    background-color: #B2B2B2;
+}
+
+.contact-submit span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-completed{
+    background: #D1D1D1;
+    border-radius: 16px;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 290px;
+    height: 32px;
+    transition: all 0.5s ease;
+    transform: scale(1,1);
+    padding: 0 30px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+.btn-completed span{
+    display: block;
+    content: "TRANSMISSION COMPLETED";
+    width: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* form部分 */
 
 footer{
@@ -335,13 +376,54 @@ footer small{
         border-radius: 11px;
     }
 
-    .contact-submit input{
-        width: 173px;
-        height: 48px;
-        font-size: 18px;
-        border-radius: 30px;
-        margin-bottom: 0;
-        font-family: "Noto sans";
+    
+    .sp-contact-submit {
+        margin: 0 auto;
+        width: 141px;
+        height: 32px;
+        background: #D1D1D1;
+        border-radius: 16px;
+        border: none;
+        color: #707070;
+        opacity: 1;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        position: relative;
+    }
+
+    .sp-contact-submit:hover{
+        border-radius: 40px;
+        color: #FCFCFC;
+        background-color: #B2B2B2;
+    }
+
+    .sp-contact-submit span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sp-btn-completed{
+        background: #D1D1D1;
+        border-radius: 16px;
+        margin: 0 auto;
+        width: 270px;
+        height: 32px;
+        transition: all 0.5s ease;
+        transform: scale(1,1);
+        font-size: 12px;
+        letter-spacing: 1.4px;
+    }
+
+    .sp-btn-completed span{
+        display: block;
+        content: "TRANSMISSION COMPLETED";
+        width: 240px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     form input::placeholder,
