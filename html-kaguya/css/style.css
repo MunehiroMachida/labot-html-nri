@@ -308,6 +308,7 @@ main{
     letter-spacing: 2.6px;
 }
 
+
 .news-img-box{
     display: flex;
     justify-content: space-between;
@@ -324,13 +325,13 @@ main{
     height: 320px;
 }
 
-.news-about-shadow{
-    background-color: #000000;
-    opacity: 0.4;
+.item-sofa>.news-about-shadow,.item-chair>.news-about-shadow,.item-table>.news-about-shadow{
+    background-color:rgba(34, 34, 34, 0.7);
+    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     z-index: 20;
 }
 
