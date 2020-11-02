@@ -26,17 +26,31 @@
     <!-- sp -->
     <header class="sp-size">
         <div class="header-container">
-            <p class="header-logo"><img src="./img/logo_footer.png" srcset="./img/logo_footer.png 1x,img/logo_footer@2x.png 2x" alt="HTML/CSS"></p>
+            <p class="header-logo">
+                <img src="./img/logo_footer.png" srcset="./img/logo_footer.png 1x,img/logo_footer@2x.png 2x" alt="HTML/CSS">
+            </p>
+            <a href="#" class="sp-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
     </header>
     <!-- sp -->
     <main>
         <section class="fv pc-size">
             <h1 class="fv-title">We propose a life.</h1>
-            <!-- <p class="fv-img"><img src="./img/home_top.png" srcset="img/home_top.png 1x,img/home_top@2x.png 2x" alt="メイン"></p>背景として使用する -->
         </section>
         <!-- sp -->
         <section class="fv sp-size">
+            <div class="sp-header-menu">
+                <ul>
+                    <li class="active-page"><a href="index.html">HOME</a></li>
+                    <li><a href="./news/news.html">NEWS</a></li>
+                    <li><a href="./recruit/recruit.html">RECRUIT</a></li>
+                    <li><a href="./contact/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
             <h1 class="fv-title">
                 <span class="fv-title-we">We</span>
                 <span class="fv-title-propose">propose</span>
@@ -74,20 +88,17 @@
             <section class="news-container">
                 <h2>NEWS</h2>
                 <div class="news-img-box">
-                    <ul class="news-about">
-                        <li class="news-about-img"><img src="./img/news01.png" srcset="img/news01.png 1x,img/news01@2x.png 2x" alt="ソファー"></li>
-                        <li class="news-about-shadow"></li>
-                        <li class="news-about-text">アームストロングのカウチ入荷</li>
+                    <ul class="news-about item-sofa">
+                        <li class="news-about-img"><img src="./img/news01.png" srcset="./img/news01.png 1x,./img/news01@2x.png 2x" alt="ソファー"></li>
+                        <li class="news-about-shadow"><span class="news-about-text">アームストロングのカウチ入荷</span></li>
                     </ul>
-                    <ul class="news-about">
-                        <li class="news-about-img"><img src="./img/news02.png" srcset="img/news02.png 1x,img/news02@2x.png 2x" alt="チェア"></li>
-                        <li class="news-about-shadow"></li>
-                        <li class="news-about-text">アームストロングのチェア再入荷</li>
+                    <ul class="news-about item-chair">
+                        <li class="news-about-img"><img src="./img/news02.png" srcset="./img/news02.png 1x,./img/news02@2x.png 2x" alt="チェア"></li>
+                        <li class="news-about-shadow"><span class="news-about-text">アームストロングのチェア再入荷</span></li>
                     </ul>
-                    <ul class="news-about">
-                        <li class="news-about-img"><img src="./img/news03.png" srcset="img/news03.png 1x,img/news03@2x.png 2x" alt="テーブル"></li>
-                        <li class="news-about-shadow"></li>
-                        <li class="news-about-text"><span>アームストロングのテーブル入荷</span></li>
+                    <ul class="news-about item-table">
+                        <li class="news-about-img"><img src="./img/news03.png" srcset="./img/news03.png 1x,./img/news03@2x.png 2x" alt="テーブル"></li>
+                        <li class="news-about-shadow"><span class="news-about-text">アームストロングのテーブル入荷</span></li>
                     </ul>
                 </div>
                 <p class="news-more"><a href="./news/news.html">view more</a></p>
@@ -104,9 +115,9 @@
                     <p class="contact-name"><input type="text" name="name" placeholder="お名前"></p>
                     <p class="contact-email"><input type="email" name="email" placeholder="メールアドレス"></p>
                     <p class="contact-textarea"><textarea name="contact" placeholder="お問い合わせ内容"></textarea></p>
-                    <p class="contact-submit pc-size"><input type="submit" value="SEND"></p>
-<!-- sp -->
-                    <p class="contact-submit sp-size"><input type="submit" value="Send"></p>
+                    <p class="contact-submit pc-size change-btn"><span>SEND</span></p>
+                    <!-- sp -->
+                    <p class="sp-contact-submit sp-size change-btn"><span>SEND</span></p>
                     <!-- sp -->
                 </form>
             </section>
@@ -132,6 +143,8 @@
         </div>
         <p><small>&copy;HTMLCSS.code</small></p>
     </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

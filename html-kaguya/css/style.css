@@ -68,12 +68,15 @@ header{
 @media screen and (max-width:375px){
     header{
         background-color: #918F89;
+        position: relative;
+        z-index: 50;
     }
     
     .header-container{
         width: 100%;
-        display: block;
         max-width: 375px;
+        display: flex;
+        padding:15px 0;
     }
 
     .header-logo{
@@ -81,9 +84,75 @@ header{
     }
     
     .header-logo img{
-        width: 10.6%;
-        height: 63.15%;
-        padding: 4.57%;
+        height: auto;
+        padding: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* ハンバーガーパクリ
+    http://webcreatornote.blogspot.com/2018/06/css_29.html */
+    .sp-hamburger,
+    .sp-hamburger span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }
+    .sp-hamburger {
+        width: 33px;
+        height: 23px;
+        position: relative;
+        margin-right: 5px;
+    }
+    .sp-hamburger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .sp-hamburger span:nth-of-type(1) {
+        top: 0;
+    }
+    .sp-hamburger span:nth-of-type(2) {
+        top: 10px;
+    }
+    .sp-hamburger span:nth-of-type(3) {
+        bottom: 0;
+    }
+    /*click後のスタイル*/
+    .sp-hamburger.active span:nth-of-type(1) {
+        -webkit-transform: translateY(20px) rotate(-45deg);
+        transform: translateY(10px) rotate(-45deg);
+    }
+    .sp-hamburger.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    .sp-hamburger.active span:nth-of-type(3) {
+        -webkit-transform: translateY(-20px) rotate(45deg);
+        transform: translateY(-10px) rotate(45deg);
+    }
+    .sp-header-menu{
+        position: absolute;
+        z-index: 40;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color:#918F89;
+        opacity: 0.9;
+        display: none;
+    }
+    .sp-header-menu li{
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: solid 1px rgb(255, 255, 255,0.3);
+        
+    }
+
+    .sp-header-menu a{
+        color: #FCFCFC;
+        opacity: none;
     }
 }
 /* ここまでヘッダー */
@@ -239,6 +308,7 @@ main{
     letter-spacing: 2.6px;
 }
 
+
 .news-img-box{
     display: flex;
     justify-content: space-between;
@@ -255,13 +325,13 @@ main{
     height: 320px;
 }
 
-.news-about-shadow{
-    background-color: #000000;
-    opacity: 0.4;
+.item-sofa>.news-about-shadow,.item-chair>.news-about-shadow,.item-table>.news-about-shadow{
+    background-color:rgba(34, 34, 34, 0.7);
+    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    bottom: 0;
     z-index: 20;
 }
 
@@ -443,22 +513,56 @@ textarea{
     resize: none;
 }
 
-.contact-submit input{
+.contact-submit {
+    margin: 0 auto;
     padding: 0;
     width: 161px;
     height: 32px;
     background: #D1D1D1;
+    border-radius: 16px;
     border: none;
     color: #707070;
     opacity: 1;
     font-size: 14px;
     letter-spacing: 1.4px;
+    position: relative;
 }
 
-.contact-submit input:hover{
+.contact-submit:hover{
     border-radius: 40px;
     color: #FCFCFC;
     background-color: #B2B2B2;
+}
+
+.contact-submit span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-completed{
+    background: #D1D1D1;
+    border-radius: 16px;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 290px;
+    height: 32px;
+    transition: all 0.5s ease;
+    transform: scale(1,1);
+    padding: 0 30px;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+.btn-completed span{
+    display: block;
+    content: "TRANSMISSION COMPLETED";
+    width: 240px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width:375px){
@@ -489,13 +593,53 @@ textarea{
         height: 160px;
     }
     
-    .contact-submit input{
-        padding: 0;
-        width: 173px;
-        height: 48px;
-        font-size: 18px;
+    .sp-contact-submit {
+        margin: 0 auto;
+        width: 141px;
+        height: 32px;
+        background: #D1D1D1;
+        border-radius: 16px;
+        border: none;
+        color: #707070;
+        opacity: 1;
+        font-size: 14px;
         letter-spacing: 1.4px;
-        border-radius: 30px;
+        position: relative;
+    }
+
+    .sp-contact-submit:hover{
+        border-radius: 40px;
+        color: #FCFCFC;
+        background-color: #B2B2B2;
+    }
+
+    .sp-contact-submit span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sp-btn-completed{
+        background: #D1D1D1;
+        border-radius: 16px;
+        margin: 0 auto;
+        width: 270px;
+        height: 32px;
+        transition: all 0.5s ease;
+        transform: scale(1,1);
+        font-size: 12px;
+        letter-spacing: 1.4px;
+    }
+
+    .sp-btn-completed span{
+        display: block;
+        content: "TRANSMISSION COMPLETED";
+        width: 240px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 /* form部分 */
@@ -650,3 +794,4 @@ footer small{
         display: block;
     }
 }
+

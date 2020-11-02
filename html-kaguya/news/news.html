@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <title>HTML/CSS-家具屋-NEWS</title>
 </head>
+
 <body>
     <header class="pc-size">
         <div class="header-container">
@@ -21,35 +23,50 @@
             </nav>
         </div>
     </header>
-        <!-- sp -->
-        <header class="sp-size">
-            <div class="header-container">
-                <p class="header-logo"><img src="../img/logo_footer.png" srcset="../img/logo_footer.png 1x,../img/logo_footer@2x.png 2x" alt="HTML/CSS"></p>
-            </div>
-        </header>
-        <!-- sp -->
+    <!-- sp -->
+    <header class="sp-size">
+        <div class="header-container">
+            <p class="header-logo">
+                <img src="../img/logo_footer.png" srcset="../img/logo_footer.png 1x,../img/logo_footer@2x.png 2x" alt="HTML/CSS">
+            </p>
+            <a href="#" class="sp-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <!-- sp -->
     <main>
-        <section class="fv">
+        <section class="fv pc-size">
             <h1 class="sub-page-title news-title">NEWS</h1>
+        </section>
+        <section class="fv sp-size">
+            <h1 class="sub-page-title news-title">NEWS</h1>
+            <div class="sp-header-menu">
+                <ul>
+                    <li class="active-page"><a href="../index.html">HOME</a></li>
+                    <li><a href="./news.html">NEWS</a></li>
+                    <li><a href="../recruit/recruit.html">RECRUIT</a></li>
+                    <li><a href="../contact/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
         </section>
         <div class="contents-wrap">
             <section class="news-container">
                 <h2>入荷情報</h2>
                 <div class="news-img-box">
-                    <ul class="news-about">
+                    <ul class="news-about item-sofa">
                         <li class="news-about-img"><img src="../img/news01.png" srcset="../img/news01.png 1x,../img/news01@2x.png 2x" alt="ソファー"></li>
-                        <li class="news-about-shadow"></li>
-                        <li class="news-about-text">アームストロングのカウチ入荷</li>
+                        <li class="news-about-shadow"><span class="news-about-text">アームストロングのカウチ入荷</span></li>
                     </ul>
-                    <ul class="news-about">
+                    <ul class="news-about item-chair">
                         <li class="news-about-img"><img src="../img/news02.png" srcset="../img/news02.png 1x,../img/news02@2x.png 2x" alt="チェア"></li>
-                        <li class="news-about-shadow"></li>
-                        <li class="news-about-text">アームストロングのチェア再入荷</li>
+                        <li class="news-about-shadow"><span class="news-about-text">アームストロングのチェア再入荷</span></li>
                     </ul>
-                    <ul class="news-about">
+                    <ul class="news-about item-table">
                         <li class="news-about-img"><img src="../img/news03.png" srcset="../img/news03.png 1x,../img/news03@2x.png 2x" alt="テーブル"></li>
-                        <li class="news-about-shadow"></li>
-                        <li class="news-about-text"><span>アームストロングのテーブル入荷</span></li>
+                        <li class="news-about-shadow"><span class="news-about-text">アームストロングのテーブル入荷</span></li>
                     </ul>
                 </div>
             </section>
@@ -69,5 +86,8 @@
         </div>
         <p><small>&copy;HTMLCSS.code</small></p>
     </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
